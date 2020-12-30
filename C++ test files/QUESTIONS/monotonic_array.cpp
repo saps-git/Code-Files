@@ -31,3 +31,4 @@ int main()
     else
         cout<<"non-monotonic"<<endl;
 }
+

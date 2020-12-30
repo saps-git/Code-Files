@@ -24,7 +24,6 @@ void mazeHelp(int maze[][20], int n, int** sol, int x, int y)
     mazeHelp(maze, n, sol, x, y-1);
     mazeHelp(maze, n, sol, x, y+1);
     sol[x][y] = 0;
-
 }
 
 void ratInMaze(int maze[][20], int n)

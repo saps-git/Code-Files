@@ -53,6 +53,7 @@ int main()
         root = insert(root, x);
     }
     
+    cout<<branchSum(root);
     
     
 

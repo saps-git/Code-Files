@@ -13,7 +13,6 @@ Add all array together and find argmax(sum of arrays). O(N) complexity.
 ** The fixed size array can be a single array of size [2361] as time range from 0 to 2359 in 24 hour clock, 
      we declare an array for values from 0 to 2360  and incr when train arrived, decr when train leaves.
 */
-
 #include<bits/stdc++.h>
 using namespace std;
 int platform(vector<double> vec1, vector<double> vec2){

@@ -1,3 +1,4 @@
+//Time Complexity: O(n*n!) Note that there are n! permutations and it requires O(n) time to print permutation.
 #include<bits/stdc++.h>
 using namespace std;
 void Permute(string& str, int left, int right)
@@ -17,7 +18,7 @@ void Permute(string& str, int left, int right)
 }
 int main()
 {
-    string str= "boat";
+    string str= "abc";
     int n= str.length();
     Permute(str, 0, n-1);
 }

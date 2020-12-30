@@ -2,8 +2,7 @@
 using namespace std;
 void tow(int n,char from,char to,char aux)
 {
-    if(n==1)
-    {
+    if(n==1){
         cout<<"move disk 1 from "<<from<<" to "<<to<<endl;
         return;
     }
