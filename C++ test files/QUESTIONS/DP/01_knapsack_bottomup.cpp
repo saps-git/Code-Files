@@ -12,6 +12,12 @@ int knapsack(vector<int> val, vector<int> wt, int W, int n){
                 dp[i][j] = dp[i-1][j];
         }
     }
+    for(int i=0;i<=n;i++){
+        for(int j=0;j<=W;j++){
+            cout<<dp[i][j]<<" ";
+        }
+        cout<<endl;
+    }
     return dp[n][W];
 }
 int main(){
@@ -19,5 +25,5 @@ int main(){
     vector<int> wt =  { 2, 3, 1, 4, 5 };
     int n = val.size()-1; // last element of the array
     int W = 5;
-    cout<<knapsack(val, wt, W, n)<<endl;
+    cout<<endl<<knapsack(val, wt, W, n)<<endl;
 }

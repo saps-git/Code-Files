@@ -37,7 +37,7 @@ int coinChange(vector<int> vec, int amt, int n){
 int main()
 {
     vector<int> vec = {1,5,10,15};
-    int amt = 11;
+    int amt = 8;
     int n = vec.size();
     cout<<coinChange(vec, amt, n)<<endl;
 }
