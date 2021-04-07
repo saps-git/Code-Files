@@ -35,9 +35,12 @@ int diameter(node* root, int& ans)
     int right = diameter(root->right, ans);
 
     // To return the number of edges
-    //ans = max(ans, left+right); //to keep track of the node(root) of the largest diameter at any time, will compare this at every node to see if there is a new one
+    /*
+        temp = max(left, right) + 1; //this is for the running through the tree, i.e passing the value(height) at each node to its parent
+        ans = max(ans, left+right); //to keep track of the node(root) of the largest diameter at any time, will compare this at every node to see if there is a new one
 
-    //return max(left,right) + 1; //this is for the running through the tree, i.e passing the value(height) at each node to its parent
+        return temp;
+    */
 
     // To return the number of nodes
     int temp = max(left, right) + 1; //this is for the running through the tree, i.e passing the value(height) at each node to its parent

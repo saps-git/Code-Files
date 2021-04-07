@@ -54,8 +54,9 @@ int main()
         root = insert(root, x);
     }
 
-    vector<int> vec = {50,20,10,15};
+    vector<int> vec = {50,20,12,18};
     int size = vec.size();
-    cout<<validSeq(root, vec, 0, size)<<endl;
+    validSeq(root, vec, 0, size) ? cout<<"true" : cout<<"false";
+    cout<<endl;
     //function you want to exec goes here
 }

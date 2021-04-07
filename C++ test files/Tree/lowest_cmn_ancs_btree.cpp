@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// LCA in a BST with all unique values
-
 struct node
 {
     int data;
@@ -26,15 +24,6 @@ node* insert(node* root, int data)
     return root;
 }
 
-node* lowestCommonAncestor(node* root, int p, int q){
-    if(root->data > p && root->data > q) //if both values are less than root, i.e they are present in left side of the root
-        return lowestCommonAncestor(root->left, p, q); //hence we move to left
-    else if(root->data < p && root->data < q) //if both values are more than root, i.e they are present in right side of the root
-        return lowestCommonAncestor(root->right, p, q); //hence we move to right
-    else //the node on which the disperse is the answer
-        return root;
-}
-
 int main()
 {
 	ios_base::sync_with_stdio(false);
@@ -51,6 +40,5 @@ int main()
         root = insert(root, x);
     }
 
-    node* ans = lowestCommonAncestor(root, 18, 30);
-    cout<<ans->data<<endl;
+    //function you want to exec goes here
 }

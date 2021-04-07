@@ -54,6 +54,7 @@ int main()
     }
 
     int sum = 180;
-    cout<<hasPathSum(root, sum)<<endl;
+    hasPathSum(root, sum) ? cout<<"true" : cout<<"false";
+    cout<<endl;
     //function you want to exec goes here
 }

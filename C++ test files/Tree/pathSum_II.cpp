@@ -1,8 +1,6 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// LCA in a BST with all unique values
-
 struct node
 {
     int data;
@@ -26,14 +24,22 @@ node* insert(node* root, int data)
     return root;
 }
 
-node* lowestCommonAncestor(node* root, int p, int q){
-    if(root->data > p && root->data > q) //if both values are less than root, i.e they are present in left side of the root
-        return lowestCommonAncestor(root->left, p, q); //hence we move to left
-    else if(root->data < p && root->data < q) //if both values are more than root, i.e they are present in right side of the root
-        return lowestCommonAncestor(root->right, p, q); //hence we move to right
-    else //the node on which the disperse is the answer
-        return root;
+void pathSum(node* root, int sum, vector<int> vec, vector<vector<int>>& ans){
+    if(!root)
+        return;
+    
+    vec.push_back(root->data);
+    sum -= root->data;
+    
+    if(!root->left && !root->right && sum == 0){
+        ans.push_back(vec);
+        return;
+    }
+    
+    pathSum(root->left, sum, vec, ans);
+    pathSum(root->right, sum, vec, ans);
 }
+        
 
 int main()
 {
@@ -51,6 +57,15 @@ int main()
         root = insert(root, x);
     }
 
-    node* ans = lowestCommonAncestor(root, 18, 30);
-    cout<<ans->data<<endl;
+    vector<vector<int>> ans;
+    vector<int> vec;
+    pathSum(root, 100, vec, ans);
+    for(int i=0;i<ans.size();i++){
+        for(int j=0;j<ans[i].size();j++){
+            cout<<ans[i][j]<<" ";
+        }
+        cout<<endl;
+    }
+
+    //function you want to exec goes here
 }

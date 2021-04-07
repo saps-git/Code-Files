@@ -24,24 +24,24 @@ node* insert(node* root, int data)
     return root;
 }
 
-void inorder(node* root) //to print
-{
-    if(!root)
-        return; 
+node* lowestCommonAncestor(node* root, int p, int q){
+    if(root->data > p && root->data > q)
+        return lowestCommonAncestor(root->left, p, q);
 
-    inorder(root->left);
-    cout<<root->data<<" ";
-    inorder(root->right);
+    else if(root->data < p && root->data < q)
+        return lowestCommonAncestor(root->right, p, q);
+
+    else
+        return root;
+
+    
 }
-
-
 
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
 	
-    
     node* root = NULL;
     freopen("./CodeSamples/input.txt","r",stdin);
     int n;
@@ -52,10 +52,9 @@ int main()
         cin>>x;
         root = insert(root, x);
     }
-    
-    cout<<branchSum(root);
-    
-    
+
+    node* ans = lowestCommonAncestor(root, 13, 30);
+    cout<<ans->data<<endl;
 
     //function you want to exec goes here
 }

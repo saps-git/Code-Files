@@ -58,7 +58,7 @@ int main()
         root = insert(root, x);
     }
 
-    int target = 41;
+    int target = 31;
     cout<<closestVal(root, target)<<endl;
 
     //function you want to exec goes here
