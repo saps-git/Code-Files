@@ -26,10 +26,10 @@ node* insert(node* root, int data)
     return root;
 }
 
-node* lowestCommonAncestor(node* root, int p, int q){
-    if(root->data > p && root->data > q) //if both values are less than root, i.e they are present in left side of the root
+node* lowestCommonAncestor(node* root, node* p, node* q){
+    if(root->data > p->data && root->data > q->data) //if both values are less than root, i.e they are present in left side of the root
         return lowestCommonAncestor(root->left, p, q); //hence we move to left
-    else if(root->data < p && root->data < q) //if both values are more than root, i.e they are present in right side of the root
+    else if(root->data < p->data && root->data < q->data) //if both values are more than root, i.e they are present in right side of the root
         return lowestCommonAncestor(root->right, p, q); //hence we move to right
     else //the node on which the disperse is the answer
         return root;
@@ -51,6 +51,10 @@ int main()
         root = insert(root, x);
     }
 
-    node* ans = lowestCommonAncestor(root, 18, 30);
+    node* p = new node();
+    p->data = 18;
+    node* q = new node();
+    q->data = 60;
+    node* ans = lowestCommonAncestor(root, p, q);
     cout<<ans->data<<endl;
 }

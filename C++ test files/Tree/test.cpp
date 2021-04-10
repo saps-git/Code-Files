@@ -24,18 +24,7 @@ node* insert(node* root, int data)
     return root;
 }
 
-node* lowestCommonAncestor(node* root, int p, int q){
-    if(root->data > p && root->data > q)
-        return lowestCommonAncestor(root->left, p, q);
 
-    else if(root->data < p && root->data < q)
-        return lowestCommonAncestor(root->right, p, q);
-
-    else
-        return root;
-
-    
-}
 
 int main()
 {
@@ -53,8 +42,7 @@ int main()
         root = insert(root, x);
     }
 
-    node* ans = lowestCommonAncestor(root, 13, 30);
-    cout<<ans->data<<endl;
+       
 
     //function you want to exec goes here
 }
