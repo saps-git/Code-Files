@@ -62,7 +62,7 @@ int main()
         root = insert(root, x);
     }
 
-    int x = 40;
+    int x = 30;
     int y = 80;
 
     if(root->data == x || root->data == y)
