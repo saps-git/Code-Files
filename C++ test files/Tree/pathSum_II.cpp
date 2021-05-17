@@ -66,6 +66,4 @@ int main()
         }
         cout<<endl;
     }
-
-    //function you want to exec goes here
 }

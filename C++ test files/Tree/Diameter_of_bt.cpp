@@ -1,3 +1,6 @@
+// Diameter is just maximum height of left subtree + right subtree for any node, hence we compare that value 
+//for every node
+
 #include<bits/stdc++.h>
 using namespace std;
 struct node
@@ -22,8 +25,6 @@ node* insert(node* root, int data)
 
     return root;
 }
-
-// Diameter is just maximum height of left subtree + right subtree for any node, hence we compare that value for every node
 // Just a modification on the height of a BT
 
 int diameter(node* root, int& ans)
@@ -43,7 +44,8 @@ int diameter(node* root, int& ans)
     */
 
     // To return the number of nodes
-    int temp = max(left, right) + 1; //this is for the running through the tree, i.e passing the value(height) at each node to its parent
+    int temp = max(left, right) + 1; //this is for the running through the tree, i.e passing the value(height) 
+                                     //at each node to its parent
     int res = max(temp, 1+left+right); //max if keeping this node as root, or the runnig value
     ans = max(ans, res); //max of previous ans or res
 

@@ -72,7 +72,7 @@ int main()
         root = insert(root, x);
     }
 
-    int k = 3;
+    int k = 2;
     //vector<int> vec;
     //kthElement(root, vec);
     //cout<<vec[k-1]<<endl;

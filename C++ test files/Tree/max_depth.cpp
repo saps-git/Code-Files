@@ -49,5 +49,4 @@ int main()
     }
 
     cout<<max_depth(root)<<endl;
-    //function you want to exec goes here
 }

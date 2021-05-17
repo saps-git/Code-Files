@@ -50,3 +50,5 @@ int main()
     node* ans = bstFromPreorder(preorder, pos, 0, INT_MAX);
     levelOrder(ans);
 }
+
+//Don't run here or it will crash, go to LEETCODE #1008

@@ -66,5 +66,4 @@ int main()
     q->data = 60;
     node* ans = lowestCommonAncestor(root, p, q);
     cout<<ans->data<<endl;
-    //function you want to exec goes here
 }

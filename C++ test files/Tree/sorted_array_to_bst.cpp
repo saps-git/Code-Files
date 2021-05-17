@@ -58,7 +58,4 @@ int main()
     vector<int> vec = {-10,-3,0,5,9};
     node* root = constructTree(vec, 0, vec.size()-1); //will do a binary search, hence passing the left and right values
     inorder(root);
-
-    
-    //function you want to exec goes here
 }
