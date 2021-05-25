@@ -21,7 +21,6 @@ void printNode(node* ptr)
     {
         cout<<ptr->data<<" ";
         ptr = ptr->next;
-        
     }
     cout<<endl;
 }
@@ -38,7 +37,7 @@ int main()
     head->next->next->next->next->next = createNode(5);
     head->next->next->next->next->next->next = createNode(6);
 
-    head = head->next;
-    printNode(head);
+    node* root = head->next;
+    printNode(root);
 }
 
