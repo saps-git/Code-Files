@@ -24,13 +24,10 @@ node* insert(node* root, int data)
     return root;
 }
 
-
-
 int main()
 {
 	ios_base::sync_with_stdio(false);
 	cin.tie(NULL);
-	
     node* root = NULL;
     freopen("./CodeSamples/input.txt","r",stdin);
     int n;
@@ -42,7 +39,4 @@ int main()
         root = insert(root, x);
     }
 
-       
-
-    //function you want to exec goes here
 }

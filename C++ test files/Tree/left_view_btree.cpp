@@ -65,6 +65,4 @@ int main()
     for(int i: vec)
         cout<<i<<" ";
     cout<<endl;
-
-    //function you want to exec goes here
 }
