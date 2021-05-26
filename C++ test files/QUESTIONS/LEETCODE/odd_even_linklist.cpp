@@ -1,3 +1,10 @@
+/*
+
+Given the head of a singly linked list, group all the nodes with odd indices together followed by the nodes 
+with even indices, and return the reordered list.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 

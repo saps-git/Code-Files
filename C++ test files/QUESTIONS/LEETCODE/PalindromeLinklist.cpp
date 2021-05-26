@@ -47,7 +47,7 @@ bool palindrome(node* head)
     while(fast && fast->next)
     {
         fast = fast->next;
-        if(fast->next)
+        if(fast->next) //for odd number of elements
             fast = fast->next;
         slow = slow->next;
     } // finding the mid point
@@ -80,11 +80,8 @@ int main()
     head->next->next->next->next->next->next = createNode(1);
 
     head = head->next;
-    if(palindrome(head))
-        cout<<"PALINDROME"<<endl;
-    else
-        cout<<"NOT PALINDROME"<<endl;
-    //printNode(head);
+    palindrome(head) ? cout<<"PALINDROME" : cout<<"NOT PALINDROME";
+    cout<<endl;
 }
 
  

@@ -17,18 +17,17 @@ node* createNode(int x)
 
 void printNode(node* ptr)
 {
-    while(ptr->next != NULL)
+    while(ptr)
     {
-        ptr = ptr->next;
         cout<<ptr->data<<" ";
+        ptr = ptr->next;
+        
     }
     cout<<endl;
 }
 
 node* reverseList(node* ptr, int x, int y)
 {
-    ptr = ptr->next; //for this implementation of link list only
-
     if(ptr == NULL)
         return NULL;
     
@@ -68,8 +67,6 @@ int main()
 {
     node* head = new node;
     head->data = 0;
-    // = createNode(1);
-    //head = head;
     head->next = createNode(1);
     head->next->next = createNode(2);
     head->next->next->next = createNode(3);
@@ -77,6 +74,7 @@ int main()
     head->next->next->next->next->next = createNode(5);
     head->next->next->next->next->next->next = createNode(6);
 
+    head = head->next;
     reverseList(head, 2, 4);
     printNode(head);
 }

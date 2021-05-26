@@ -21,7 +21,8 @@ char nonRepeating(string str){
 }
 
 int main(){
-    string str = "aaabcccdeeef";
-    char n = nonRepeating(str);
-    cout<<n<<endl;
+    string s = "aaabcccdeeef";
+    char c = nonRepeating(s);
+    cout<<c<<endl;
 }
+
