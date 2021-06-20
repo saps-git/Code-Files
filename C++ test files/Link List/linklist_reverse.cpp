@@ -28,11 +28,10 @@ void printNode(node* ptr)
 
 node* reverseList(node* &head){
     node* curr = head;
-    node* save;
     node* prev = NULL;
 
     while(curr){
-        save = curr->next;
+        node*  save = curr->next;
         curr->next = prev;
         prev = curr;
         curr = save;

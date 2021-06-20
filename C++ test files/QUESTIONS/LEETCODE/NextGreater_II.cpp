@@ -1,3 +1,5 @@
+// next greater in circular array
+
 #include<bits/stdc++.h>
 using namespace std;
 vector<int> nextGreaterElements(vector<int>& nums) 
@@ -5,7 +7,7 @@ vector<int> nextGreaterElements(vector<int>& nums)
     int n = nums.size();
     vector<int> sol(n, -1);
     stack<int> s;
-    for(int i=0;i<n*2;i++) // extending(doubling) the array of itself like 1,2,1,1,2,1 ; so that we can traverse like a circular array
+    for(int i=0;i<n*2;i++) // extending(doubling) the array of itself like 3,1,2,1,3,1,2,1 ; so that we can traverse like a circular array
     {
         while(!s.empty() && nums[s.top()] < nums[i%n]) // to wrap around the circular array
         {
@@ -20,7 +22,7 @@ vector<int> nextGreaterElements(vector<int>& nums)
 
 int main()
 {
-    vector<int> nums = {1,2,1};
+    vector<int> nums = {3,1,2,1};
     vector<int> sol = nextGreaterElements(nums);
     for(int i: sol)
         cout<<i<<" ";

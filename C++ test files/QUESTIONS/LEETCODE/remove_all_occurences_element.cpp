@@ -1,3 +1,5 @@
+//Remove all occurence of an element
+
 #include<bits/stdc++.h>
 using namespace std;
 void removeElement(vector<int>& nums, int val){

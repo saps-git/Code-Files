@@ -1,3 +1,9 @@
+/*
+
+Given the head of a singly linked list and two integers left and right where left <= right, reverse the nodes of the list from position left to position right, and return the reversed list.
+
+*/
+
 #include<bits/stdc++.h>
 using namespace std;
 
@@ -45,7 +51,7 @@ node* reverseList(node* ptr, int x, int y)
     node* conn = prev; // initializing pointers to later connect to the reversed part
     node* tail = curr;
 
-    while(y>0)
+    while(y>0) //going to zero, because, while connecting the tail, curr will be y+1th element, so easy to point
     {
         node* save = curr->next; // reversing the part
         curr->next = prev;

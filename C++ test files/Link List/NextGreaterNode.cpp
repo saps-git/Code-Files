@@ -32,11 +32,13 @@ vector<int> nextGreat(node* head)
 
     for(int i=1;i<n;i++)
     {
+        /*
         if(s.empty())
         {
             s.push(vec[i]);
             continue;
         }
+        */
         while(!s.empty() && vec[s.top()] < vec[i])
         {
             sol[s.top()] = vec[i];
@@ -55,8 +57,8 @@ int main()
     head->next->next = createNode(13);
     head->next->next->next = createNode(21);
     head->next->next->next->next = createNode(1);
-    //head->next->next->next->next->next = createNode(5);
-    //head->next->next->next->next->next->next = createNode(6);
+    head->next->next->next->next->next = createNode(5);
+    head->next->next->next->next->next->next = createNode(6);
 
     head = head->next;
     vector<int> sol = nextGreat(head);
