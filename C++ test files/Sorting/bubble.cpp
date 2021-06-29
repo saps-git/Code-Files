@@ -4,6 +4,7 @@ By seting the last element in sorted order after each round
 
 Sorting In Place: Yes
 Stable: Yes
+Time: O(n)
 
 */
 #include<bits/stdc++.h>
