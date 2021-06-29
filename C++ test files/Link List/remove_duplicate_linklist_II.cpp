@@ -40,7 +40,7 @@ and all nodes to delete are "inside" the list.
 
 
 node* removeDupList(node* head){
-    node* dummy = new node(); //sentinal node
+    node* dummy = new node; //sentinal node
     dummy->next = head;
 
     // prev = the last node 

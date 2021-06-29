@@ -1,13 +1,13 @@
 #include<bits/stdc++.h>
 using namespace std;
 
-// O(2n) = O(n) with space O(n)
+// time O(n) with space O(n)
 
 char nonRepeating(string str){
-    map<char,int> m;
+    unordered_map<char,int> m;
     for(int i=0;i<str.length();i++){
         if(m.find(str[i])==m.end()) // if char is not present in the map, the add it , with no of occur or value is 1
-            m.insert(make_pair(str[i],1));
+            m.insert({str[i], 1});
         else 
             m[str[i]]++; // if it is already present, then just increment the number of occurence, or the value
     }

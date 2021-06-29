@@ -1,0 +1,7 @@
+to compile code => g++ -o [name of file that will contain compiled, you can name it anything] [source code file]
+
+eg. g++ -o runfile test.cpp
+
+to runcode => [compiled code filename]
+
+eg. runfile

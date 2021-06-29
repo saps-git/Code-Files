@@ -5,11 +5,13 @@ vector<int> help_classmate(vector<int> array, int n)
     vector<int> sol(n,-1);
     stack<int> st;
     for (int i=0;i<n;i++){ 
+
+        /*
         if (st.empty()){ 
             st.push(i); 
             continue; 
         }
-        
+        */
         while (!st.empty() && array[st.top()] > array[i]) { 
             sol[st.top()] = array[i];
             st.pop(); 

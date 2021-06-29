@@ -22,7 +22,7 @@ vector<int> nge(vector<int> &nums)
 }
 int main()
 {
-    vector<int> nums = {11,13,21,1};
+    vector<int> nums = {11,13,21,1,5,6};
     vector<int> v = nge(nums);
     for(int i: v)
         cout<<i<<" ";

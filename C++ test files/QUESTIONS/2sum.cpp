@@ -20,7 +20,7 @@ vector<vector<int>> twoSum(vector<int> vec, int target)
 
 int main()
 {
-    vector<int> vec = {3,2,5,-4,8,11,1,-1,6};
+    vector<int> vec = {3,2,5,4,8,11,1,-1,6};
     int target = 10;
     vector<vector<int>> ans = twoSum(vec, target);
     for(auto i: ans){

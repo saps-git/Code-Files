@@ -26,7 +26,7 @@ vector<int> nextGreat(node* head)
 
     // same as next greater in normal array
     int n = vec.size();
-    vector<int> sol(n);
+    vector<int> sol(n, -1); //intializing the solution vector
     stack<int> s;
     s.push(0);
 

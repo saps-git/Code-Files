@@ -11,7 +11,7 @@ int main()
         else if(str[i]>=97 && str[i]<=122)
             consonent++;
     }
-    cout<<"vowel: "<<vowel<<" "<<"consonent: "<<consonent<<"\t";
+    cout<<"vowel: "<<vowel<<" "<<"consonent: "<<consonent<<" ";
     for(int i=0;i<str.length();i++)
     {
         if(str[i]==' ' && str[i-1]!=' ')

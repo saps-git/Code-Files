@@ -16,5 +16,6 @@ int main()
 {
     vector<int> array = {5,1,22,25,6,-1,8,10};
     vector<int> sequence = {1,6,-1,10};
-    cout<<isValidSubsequence(array, sequence)<<endl; 
+    isValidSubsequence(array, sequence) ? cout<<"true" : cout<<"false";
+    cout<<endl;
 }
