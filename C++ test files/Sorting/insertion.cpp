@@ -8,7 +8,7 @@ Move the greater elements one position up to make space for the swapped element.
 
 Sorting In Place: Yes
 Stable: Yes
-Time: O(n)
+Time: O(n**2)
 
 */
 

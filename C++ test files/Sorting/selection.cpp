@@ -10,7 +10,7 @@ moved to the sorted subarray.
 
 In Place : Yes
 Stable : No
-Time: O(n)
+Time: O(n**2)
 
 */
 
