@@ -9,27 +9,24 @@ Time: O(n)
 */
 #include<bits/stdc++.h>
 using namespace std;
-void swapHelp(int& x, int& y){
-    int temp = x;
-    x = y;
-    y = temp;
+void swapHelp(vector<int>& vec, int i, int j){
+    int temp = vec[i];
+    vec[i] = vec[j];
+    vec[j] = temp;
 }
-vector<int> bubbleSort(vector<int>& vec){
-    int n = vec.size();
-    for(int i=0;i<n;i++){
-        for(int j = 0;j<n-i;j++){
-            if(vec[j] > vec[j+1])
-                swapHelp(vec[j], vec[j+1]);
+void bubbleSort(vector<int>& vec){
+    for(int i=0;i<vec.size();i++){
+        for(int j=1;j<vec.size()-i;j++){
+            if(vec[j-1] > vec[j])
+                 swapHelp(vec, j, j-1);
         }
     }
-
-    return vec;
 }
 int main()
 {
     vector<int> vec ={13,45,2,6,78,10};
-    vector<int> ans = bubbleSort(vec);
-    for(auto i: ans)
+    bubbleSort(vec);
+    for(auto i: vec)
         cout<<i<<"\t";
     cout<<endl;
 }

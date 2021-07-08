@@ -15,31 +15,25 @@ Time: O(n)
 #include<iostream>
 #include<vector>
 using namespace std;
-
-void swapHelp(int& x, int& y)
-{
-    int temp = x;
-    x = y;
-    y = temp;
+void swapHelp(vector<int>& vec, int i, int j){
+    int temp = vec[i];
+    vec[i] = vec[j];
+    vec[j] = temp;
 }
-
-vector<int> insertionSort(vector<int>& vec){
-    int n = vec.size();
-    for(int i=1;i<n;i++){
+void insertionSort(vector<int>& vec){
+    for(int i=1;i<vec.size();i++){
         int j = i;
-        while(j>=0 && vec[j-1] > vec[j]){
-            swapHelp(vec[j], vec[j-1]);
+        while(j>0 && vec[j-1] > vec[j]){
+            swapHelp(vec, j, j-1);
             j--;
         }
     }
-
-    return vec;
 }
 int main()
 {
     vector<int> vec ={13,45,2,6,78,10};
-    vector<int> ans = insertionSort(vec);
-    for(auto i: ans)
+    insertionSort(vec);
+    for(auto i: vec)
         cout<<i<<"\t";
     cout<<endl;
 }
