@@ -1,0 +1,7 @@
+to compile code =>javac [source code file name]
+
+eg. javac Test.java
+
+to runcode => java [class code filename (same name as source code file)]
+
+eg. java Test
