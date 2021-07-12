@@ -1,0 +1,4178 @@
+
+
+
+<!doctype html>
+<html>
+<head>
+  <link rel="icon" type="image/png" href="https://assets.interviewbit.com/assets/ibpp/favicon-fcc4f9cdd2e768e1a9c0b884239242138fd250486c634d791103a152eee669a1.ico.gz">
+  <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="author" content="Kings Gambit Labs">
+
+
+<title>40+ OOPs Interview Questions and Answers (2021) - InterviewBit</title>
+<meta name="description" content="Learn and Practice on almost all coding interview questions asked historically and get referred to the best tech companies" />
+<meta property="og:site_name" content="InterviewBit" />
+<meta property="og:site" content="InterviewBit" />
+<meta property="og:description" content="Learn and Practice on almost all coding interview questions asked historically and get referred to the best tech companies" />
+<meta property="og:image" content="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/059/original/OOPs-InterviewQuestions.jpg?1614861156" />
+<meta property="og:url" content="https://www.interviewbit.com/oops-interview-questions/" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:site" content="@interview_bit" />
+<meta name="twitter:creator" content="@interview_bit" />
+<meta name="twitter:title" content="40+ OOPs Interview Questions and Answers (2021) - InterviewBit" />
+<meta name="twitter:description" content="Learn and Practice on almost all coding interview questions asked historically and get referred to the best tech companies" />
+<meta name="twitter:image" content="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/059/original/OOPs-InterviewQuestions.jpg?1614861156" />
+<meta name="twitter:image:alt" content="InterviewBit" />
+<link rel="canonical" href="https://www.interviewbit.com/oops-interview-questions/" />
+<link rel="amphtml" href="https://www.interviewbit.com/oops-interview-questions/amp/" />
+
+<meta property="fb:app_id" content="314158428787536" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="C2frmrnDUsSqOlw2UECU2ZoOkQ/cWir3nrtags/GUQ4NRiKp3HttPrHZ3NV2ZglQJhkVUu3fbGripLrkNRsHAg==" />
+
+<meta name="env-name" data-id="interviewbit" />
+
+
+  <link rel="manifest" href="/gcm-manifest-ib.json">
+
+  <!-- Preload this font :: start -->
+  <link rel="preload" media="all"
+    href="https://assets.interviewbit.com/assets/IBIcons/ib-icons-bed04d33f39035aecd170ded33fc22ae61a05f243001aeb2377966341be91b37.woff.gz"
+    as="font" data-turbolinks-track="reload" type="font/woff" crossorigin />
+  <!-- Preload this font :: END -->
+
+    <script>
+  var domain = 'interviewbit.com';
+  if (domain.indexOf('www.') !== 0) {
+    domain = 'www.' + domain;
+  }
+
+  if (0 === document.location.href.indexOf("https://")) {
+    domain = "https://" + domain + "/";
+    if (0 !== document.location.href.indexOf(domain)) {
+      var newLocation = document.location.href.replace(/https:\/\/[^\/]+\//, domain);
+
+      if (newLocation !== document.location.href) {
+        document.location.replace(newLocation);
+      }
+    }
+  } else {
+    domain = "http://" + domain + "/";
+    if (0 != document.location.href.indexOf(domain)) {
+      var newLocation = document.location.href.replace(/http:\/\/[^\/]+\//, domain);
+
+      if(newLocation !== document.location.href) {
+        document.location.replace(newLocation);
+      }
+    }
+  }
+  </script>
+
+  <script>
+  window.ENV_VARS = {
+    mode: "production",
+    application: JSON.parse('{"env_id":"interviewbit","env_site_name":"InterviewBit","env_site_nick":"InterviewBit","env_domain":"interviewbit.com","env_base_url":"https://www.interviewbit.com","env_from_mailer":"info@interviewbit.com","env_reply_to_mailer":"info@interviewbit.com","env_support_mailer":"support@interviewbit.com","env_hello_mailer":"hello@interviewbit.com","env_calendar_organiser":"info@interviewbit.com","env_webpush_manifest":"/gcm-manifest-ib.json"}'),
+    config: JSON.parse('{"speed_test_enabled":true,"seasonal_theme_mode":"none"}')
+  };
+</script>
+  
+
+    <script>
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-NMKZTRG');
+    </script>
+
+
+
+
+<script>
+  if (!('IntersectionObserver' in window)) {
+    var script = document.createElement("script");
+    script.src = "https://raw.githubusercontent.com/w3c/IntersectionObserver/master/polyfill/intersection-observer.js";
+    document.getElementsByTagName('head')[0].appendChild(script);
+  }
+  var gtmServerEvents = [];
+  
+  window.GTMData = (function () {
+    return {
+      gtmDataLayerVariables: [],
+      company: "interviewbit".toLowerCase(),
+      isLoggedIn: false,
+      email: "",
+      isNewUser: false,
+      userType: "ib_user",
+      gtmServerEvents,
+    };
+  })();
+  
+</script>
+
+
+  
+
+  <script src="https://assets.interviewbit.com/packs/js/frontend/tracking/gtm.fa0d21.js"></script>
+
+ 
+
+  <link rel="stylesheet" media="all" href="https://assets.interviewbit.com/assets/web/application-5185872c2e5b2bdcae942e9bdb08fdd4b4c2061d6d18957f9349ab00b85af4a2.css.gz" />
+  <link rel="stylesheet" media="all" href="https://assets.interviewbit.com/assets/web/ibcms/interview_questions-2f10bfef9b0cd952fb1adb09d3f96075e2637fe332bd1c24379d649ab2f0a516.css.gz" />
+      <link rel="stylesheet" media="screen" href="https://assets.interviewbit.com/packs/css/frontend/base.ddcfdd.css" />
+    <link rel="stylesheet" media="screen" href="https://assets.interviewbit.com/packs/css/frontend/ibpp/onboarding.e992de.css" />
+
+
+
+</head>
+<body class="tex2jax_ignore">
+  
+<nav class="navbar navbar-inverse mit-header navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/" style="padding:10px 5px;">
+        <img style="height:25px;" alt="InterviewBit logo" src="https://assets.interviewbit.com/assets/ib_logo_svg-c7ed205b9475b598a9f652d7045054fa26b491fa95cf098569fa41ee0ac34259.svg.gz" />
+      </a>
+    </div>
+    <div id="navbar" class="navbar-collapse collapse">
+      <ul class="nav navbar-nav features">
+          <li id="academy_feature" class="feature ">
+            <a
+              href="https://www.scaler.com/academy/?utm_source=ib&utm_medium=headermenu&utm_campaign=/oops-interview-questions"
+              onclick="ga('send', 'event', 'scaler-academy', 'redirect', 'ib-header')"
+            >
+              <span class="user-score header-items" style="margin-right: 20px">Scaler Academy
+                <span class="badge" style="font-size: 8px; position: absolute; top: -8px; right: -35px; color: black; border: 1px solid darkorange; background-color: gold;">New</span>
+              </span>
+            </a>
+          </li>
+          <li id="practice_feature" class="feature ">
+            <a href="/practice/" >
+              <span class="user-score header-items">Practice</span>
+            </a>
+          </li>
+
+          <!--<li class="dropdown feature" id="more_feature">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">
+              <span class="user-score header-items">More</span>
+              <span class="caret" style="margin-bottom: 5px;"></span>
+            </a>
+
+            <ul class="dropdown-menu">-->
+              <li id="contest_feature" class="feature ">
+                <a href="/contests/" >
+                  <span class="user-score header-items">Contests</span>
+                </a>
+              </li>
+          <!-- </ul>
+          </li>-->
+      </ul>
+      <div class="nav navbar-nav hidden-xs hidden-sm hidden-md">
+      </div>
+      <ul class="nav navbar-nav navbar-right" id='welcome-page-nav' >
+      </ul>
+    </div>
+    <!--/.nav-collapse -->
+  </div>
+</nav>
+
+<style>
+  .navbar-static-top {
+    z-index: 90;
+  }
+
+  .link {
+    color: #0051fc;
+  }
+
+  #welcome-page-nav {
+    margin-top: 3px;
+  }
+  #welcome-page-nav > li > a {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+    padding: 10px 5px;
+    background: transparent;
+  }
+  #welcome-page-nav > li > a:hover {
+    color:#69c8c9;
+  }
+
+  .select2-container--open .select2-dropdown--below{
+    width: 324px !important;
+  }
+
+  #welcome-page-nav > li {
+    padding:0px 5px;
+  }
+  #welcome-page-nav > li > a.sign-in-link {
+    border:solid thin;
+    border-radius:5px;
+    padding: 6px 15px;
+    margin-top: 3px;
+  }
+  #welcome-page-nav > li > a.sign-in-link:hover {
+    border-color: #63b1c6;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  #welcome-page-nav > li.looking-to-hire span {
+    font-size: 13px;
+    font-weight: bold;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.3px;
+    text-align: center;
+    color: rgba(0, 0, 0, 0.7);
+  }
+  @media only screen and (max-width: 500px) {
+    #welcome-page-nav > li.looking-to-hire {
+      border-left: none !important;
+
+    }
+    ul#welcome-page-nav{
+      text-align:center;
+    }
+    ul#welcome-page-nav > li{
+      display: inline-block;
+    }
+  }
+  @media only screen and (max-width: 1440px) {
+    .multi-keyword-search.form-control {
+      width: 150px !important;
+    }
+    .select2.select2-container{
+      width: 150px !important;
+    }
+  }
+  @media screen and (max-width: 1275px) {
+    .looking-to-hire {
+      display: none !important;
+    }
+  }
+</style>
+
+
+
+  <div
+  data-el='ibpp-ribbon'
+  data-name='free_academy'
+  data-title='&lt;span class=&quot;highlight&quot;&gt;&lt;b&gt;Win $3,500 &amp;&lt;br&gt; Get Hired&lt;/b&gt;&lt;/span&gt;'
+  data-description='&lt;b&gt;Codegoda 2021 is here!&lt;/b&gt;&lt;p&gt;Showcase your programming skills and win upto &lt;b&gt;&lt;span&gt;$3500&lt;/span&gt;&lt;/b&gt;&lt;/p&gt;'
+  data-logo='https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/644/original/codegodalogo.png?1626091841'
+  data-time='2021-07-17 12:00:00'
+  data-action-text='Register Now!'
+  data-action-link='https://www.interviewbit.com/contest/codegoda---competition-for-coders--by-coders-1855/?utm_source=ib&amp;utm_medium=top_nudge&amp;utm_campaign=CodeGoda&amp;utm_content='
+  data-right-content=''
+  data-contest-icon='https://staging-assets.interviewbit.com/assets/ibpp/sat_secondary-027fc8b824ec9c6992610e0a57843f3d72422d92992ac92b9ceefa6e9664ea6f.png'
+  data-ga-event-name='codegoda'
+></div>
+
+<link rel="stylesheet" media="all" href="https://assets.interviewbit.com/assets/master/products/ibpp/pages/onboarding-c404950aa79f54025edad501451fe59035d2dab4dfcf70daad478ed315666853.css.gz" />
+
+  
+
+<div id="onboarding-modal" class="sr-modal form-flow onboarding">
+  <div class="sr-modal__content sr-modal__content--right">
+      <div class="sr-modal__header">
+        <a class="sr-modal__close" data-target="onboarding-modal" data-action="modal-close">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+    <div class="sr-modal__body ">
+      
+  <div class="form-flow__modes onboarding__modes">
+    <div class="form-flow__mode form-flow__mode--active" data-mode="profession_form">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/user-type-eb2fdc5ae9462f424689e51756181fe272802b50c7846e726bf1005047e92dfb.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Welcome to Interviewbit, help us create the best experience for you!
+        </h2>
+      </div>
+      <div class="form-flow__subtitle">Currently, You are a:</div>
+
+      <div class="form-flow__form">
+        <form id="profession_form" class="form" autocomplete="none">
+  <div class="form__fields">
+    <div class="onboarding-profiles">
+      <div class="onboarding-profiles__type">
+        <div class="onboarding-profiles__content">
+          <input
+            id="student"
+            class="form-input gtm-track-element"
+            name="profile"
+            value="non_professional"
+            type="radio"
+            data-event="click"
+          />
+          <label for="student" class="onboarding-profiles__img onboarding-profiles__img--student">
+            <img
+              src="https://assets.interviewbit.com/assets/ibpp/onboarding/student-79095f50eb0004d1d008d776b50dfea988279a35e6abe8bcf9d0620663879907.svg.gz"
+              alt="Student"
+            />
+          </label>
+        </div>
+        <label for="student">Student</label>
+      </div>
+      <div class="onboarding-profiles__type">
+        <div class="onboarding-profiles__content">
+          <input
+            id="professional"
+            class="form-input gtm-track-element"
+            name="profile"
+            value="professional"
+            type="radio"
+            data-event="click"
+          />
+          <label for="professional" class="onboarding-profiles__img onboarding-profiles__img--professional">
+            <img
+              src="https://assets.interviewbit.com/assets/ibpp/onboarding/working-professional-f078a4c1f89be7819adf8630c212b717c29860c141a598b6053e6b0e0a3d2c1b.svg.gz"
+              alt="Working Professional"
+            />
+          </label>
+        </div>
+        <label for="professional">Working Professional</label>
+      </div>
+    </div>
+  </div>
+</form>
+
+      </div>
+    </div>
+
+    <div class="form-flow__mode" data-mode="professional">
+      
+<div class="form-flow__header">
+  <div class="form-flow__img">
+    <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/education-details-4e3aeb966de19332abb41ec831be1555b6a3dc2ae2e73708c4290ffbc23f6ab3.svg.gz" />
+  </div>
+  <h2 class="form-flow__title dark bolder">
+    Few details about your education
+  </h2>
+</div>
+
+<div class="form-flow__form">
+  <form id="professional" class="form" autocomplete="none">
+    <div class="form__fields">
+      
+<div
+  class="form-field "
+  data-name="university"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    College/University
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        
+<div id="professional_university" class="sr-select">
+  <div class="sr-select__control">
+    <input data-gtm-element="option" autocomplete="none" class="sr-select__input gtm-track-element" name="select-ignore-university" type="text" aria-label= "select university"/>
+    <input
+      autocomplete="none"
+      autocomplete="off"
+      class="sr-select__value-input"
+      tabindex="-1"
+      name="university"
+      id="input-professional_university"
+      type="text"
+      
+      value=""
+      aria-label="university"
+    />
+    <div class="sr-select__box">
+      <div data-gtm-element="option" class="sr-select__placeholder">Enter the name of your college</div>
+      <div class="sr-select__value">
+      </div>
+      <div class="sr-select__loader">
+      </div>
+      <div class="sr-select__arrow">
+        <i class="icon-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sr-select__dropdown">
+    <div class="sr-select__hint hidden">
+      Type to search
+    </div>
+    <div class="sr-select__options" role="listbox">
+      
+
+    </div>
+    <div class="sr-select__create-option hidden">
+    </div>
+    <div class="sr-select__no-options hidden">
+      No results found
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+      
+<div
+  class="form-field "
+  data-name="field"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Branch
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        <div class="onboarding__radios">
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Computer Science"
+                type="radio"
+                id="field_professional_0"
+              />
+              <label for="field_professional_0">Computer Science</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Information Technology"
+                type="radio"
+                id="field_professional_1"
+              />
+              <label for="field_professional_1">Information Technology</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Mathematics and Computing"
+                type="radio"
+                id="field_professional_2"
+              />
+              <label for="field_professional_2">Mathematics and Computing</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Electronics"
+                type="radio"
+                id="field_professional_3"
+              />
+              <label for="field_professional_3">Electronics</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Mechanical"
+                type="radio"
+                id="field_professional_4"
+              />
+              <label for="field_professional_4">Mechanical</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="MBA"
+                type="radio"
+                id="field_professional_5"
+              />
+              <label for="field_professional_5">MBA</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Electrical"
+                type="radio"
+                id="field_professional_6"
+              />
+              <label for="field_professional_6">Electrical</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Other"
+                type="radio"
+                id="field_professional_7"
+              />
+              <label for="field_professional_7">Other</label>
+            </div>
+        </div>
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+      
+<div
+  class="form-field "
+  data-name="orgyear"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Year of completion
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        <div class="onboarding__badges">
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2015"
+                type="radio"
+                id="orgyear_professional_0"
+              />
+              <label for="orgyear_professional_0">Before 2016</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2016"
+                type="radio"
+                id="orgyear_professional_1"
+              />
+              <label for="orgyear_professional_1">2016</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2017"
+                type="radio"
+                id="orgyear_professional_2"
+              />
+              <label for="orgyear_professional_2">2017</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2018"
+                type="radio"
+                id="orgyear_professional_3"
+              />
+              <label for="orgyear_professional_3">2018</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2019"
+                type="radio"
+                id="orgyear_professional_4"
+              />
+              <label for="orgyear_professional_4">2019</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2020"
+                type="radio"
+                id="orgyear_professional_5"
+              />
+              <label for="orgyear_professional_5">2020</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2021"
+                type="radio"
+                id="orgyear_professional_6"
+              />
+              <label for="orgyear_professional_6">2021</label>
+            </div>
+        </div>
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>    </div>
+
+    <div class="onboarding__actions">
+      <a
+        class="default-color"
+        data-action="flow-switch"
+        data-target="profession_form"
+        onclick="window.trackGaEvent('onboarding', 'education-panel-back')"
+      >
+        Back
+      </a>
+      <input
+        type="submit"
+        class="onboarding__action"
+        value="Continue"
+      />
+    </div>
+  </form>
+</div>
+
+    </div>
+
+    <div class="form-flow__mode" data-mode="non_professional">
+      
+<div class="form-flow__header">
+  <div class="form-flow__img">
+    <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/education-details-4e3aeb966de19332abb41ec831be1555b6a3dc2ae2e73708c4290ffbc23f6ab3.svg.gz" />
+  </div>
+  <h2 class="form-flow__title dark bolder">
+    Few details about your education
+  </h2>
+</div>
+
+<div class="form-flow__form">
+  <form id="non_professional" class="form" autocomplete="none">
+    <div class="form__fields">
+      
+<div
+  class="form-field "
+  data-name="university"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    College/University
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        
+<div id="non_professional_university" class="sr-select">
+  <div class="sr-select__control">
+    <input data-gtm-element="option" autocomplete="none" class="sr-select__input gtm-track-element" name="select-ignore-university" type="text" aria-label= "select university"/>
+    <input
+      autocomplete="none"
+      autocomplete="off"
+      class="sr-select__value-input"
+      tabindex="-1"
+      name="university"
+      id="input-non_professional_university"
+      type="text"
+      
+      value=""
+      aria-label="university"
+    />
+    <div class="sr-select__box">
+      <div data-gtm-element="option" class="sr-select__placeholder">Enter the name of your college</div>
+      <div class="sr-select__value">
+      </div>
+      <div class="sr-select__loader">
+      </div>
+      <div class="sr-select__arrow">
+        <i class="icon-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sr-select__dropdown">
+    <div class="sr-select__hint hidden">
+      Type to search
+    </div>
+    <div class="sr-select__options" role="listbox">
+      
+
+    </div>
+    <div class="sr-select__create-option hidden">
+    </div>
+    <div class="sr-select__no-options hidden">
+      No results found
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+      
+<div
+  class="form-field "
+  data-name="field"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Branch
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        <div class="onboarding__radios">
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Computer Science"
+                type="radio"
+                id="field_non_professional_0"
+              />
+              <label for="field_non_professional_0">Computer Science</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Information Technology"
+                type="radio"
+                id="field_non_professional_1"
+              />
+              <label for="field_non_professional_1">Information Technology</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Mathematics and Computing"
+                type="radio"
+                id="field_non_professional_2"
+              />
+              <label for="field_non_professional_2">Mathematics and Computing</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Electronics"
+                type="radio"
+                id="field_non_professional_3"
+              />
+              <label for="field_non_professional_3">Electronics</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Mechanical"
+                type="radio"
+                id="field_non_professional_4"
+              />
+              <label for="field_non_professional_4">Mechanical</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="MBA"
+                type="radio"
+                id="field_non_professional_5"
+              />
+              <label for="field_non_professional_5">MBA</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Electrical"
+                type="radio"
+                id="field_non_professional_6"
+              />
+              <label for="field_non_professional_6">Electrical</label>
+            </div>
+            <div class="onboarding__radio onboarding__radio--student">
+              <input
+                class="form-input gtm-track-element"
+                name="field"
+                value="Other"
+                type="radio"
+                id="field_non_professional_7"
+              />
+              <label for="field_non_professional_7">Other</label>
+            </div>
+        </div>
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+      
+<div
+  class="form-field "
+  data-name="orgyear"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Year of completion
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        <div class="onboarding__badges">
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2019"
+                type="radio"
+                id="orgyear_non_professional_0"
+              />
+              <label for="orgyear_non_professional_0">Before 2019</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2020"
+                type="radio"
+                id="orgyear_non_professional_1"
+              />
+              <label for="orgyear_non_professional_1">2020</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2021"
+                type="radio"
+                id="orgyear_non_professional_2"
+              />
+              <label for="orgyear_non_professional_2">2021</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2022"
+                type="radio"
+                id="orgyear_non_professional_3"
+              />
+              <label for="orgyear_non_professional_3">2022</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2023"
+                type="radio"
+                id="orgyear_non_professional_4"
+              />
+              <label for="orgyear_non_professional_4">2023</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2024"
+                type="radio"
+                id="orgyear_non_professional_5"
+              />
+              <label for="orgyear_non_professional_5">2024</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2025"
+                type="radio"
+                id="orgyear_non_professional_6"
+              />
+              <label for="orgyear_non_professional_6">2025</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--student">
+              <input
+                class="form-input"
+                name="orgyear"
+                value="2026"
+                type="radio"
+                id="orgyear_non_professional_7"
+              />
+              <label for="orgyear_non_professional_7">After 2025</label>
+            </div>
+        </div>
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>    </div>
+
+    <div class="onboarding__actions">
+      <a
+        class="default-color"
+        data-action="flow-switch"
+        data-target="profession_form"
+        onclick="window.trackGaEvent('onboarding', 'education-panel-back')"
+      >
+        Back
+      </a>
+      <input
+        type="submit"
+        class="onboarding__action"
+        value="Finish"
+      />
+    </div>
+  </form>
+</div>
+
+    </div>
+
+    <div class="form-flow__mode" data-mode="professinal_details">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/working-details-da4c758b4c9a7db266da6a06b20b3f6f8c092fc918bf6cdfaf857c3c4ecfbee8.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Few details about your career...
+        </h2>
+      </div>
+
+      
+<div class="form-flow__form">
+  <form id="professinal_details" class="form" autocomplete="none">
+    <div class="form__fields">
+      
+<div
+  class="form-field "
+  data-name="orgname"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Current Company
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        
+<div id="company" class="sr-select">
+  <div class="sr-select__control">
+    <input data-gtm-element="option" autocomplete="none" class="sr-select__input gtm-track-element" name="select-ignore-orgname" type="text" aria-label= "select orgname"/>
+    <input
+      autocomplete="none"
+      autocomplete="off"
+      class="sr-select__value-input"
+      tabindex="-1"
+      name="orgname"
+      id="input-company"
+      type="text"
+      required
+      value=""
+      aria-label="orgname"
+    />
+    <div class="sr-select__box">
+      <div data-gtm-element="option" class="sr-select__placeholder">Enter company name</div>
+      <div class="sr-select__value">
+      </div>
+      <div class="sr-select__loader">
+      </div>
+      <div class="sr-select__arrow">
+        <i class="icon-chevron-down"></i>
+      </div>
+    </div>
+  </div>
+  <div class="sr-select__dropdown">
+    <div class="sr-select__hint hidden">
+      Type to search
+    </div>
+    <div class="sr-select__options" role="listbox">
+      
+
+    </div>
+    <div class="sr-select__create-option hidden">
+    </div>
+    <div class="sr-select__no-options hidden">
+      No results found
+    </div>
+  </div>
+</div>
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+      
+<div
+  class="form-field "
+  data-name="experience"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Experience
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+        <div class="onboarding__badges">
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="6"
+                required
+                type="radio"
+                id="experience_0"
+              />
+              <label for="experience_0">&lt;6 Months</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="12"
+                required
+                type="radio"
+                id="experience_1"
+              />
+              <label for="experience_1">1 Year</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="24"
+                required
+                type="radio"
+                id="experience_2"
+              />
+              <label for="experience_2">2 Years</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="36"
+                required
+                type="radio"
+                id="experience_3"
+              />
+              <label for="experience_3">3 Years</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="48"
+                required
+                type="radio"
+                id="experience_4"
+              />
+              <label for="experience_4">4 Years</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="60"
+                required
+                type="radio"
+                id="experience_5"
+              />
+              <label for="experience_5">5 Years</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="72"
+                required
+                type="radio"
+                id="experience_6"
+              />
+              <label for="experience_6">6 Years</label>
+            </div>
+            <div class="onboarding__badge onboarding__badge--professional">
+              <input
+                class="form-input"
+                name="experience"
+                value="78"
+                required
+                type="radio"
+                id="experience_7"
+              />
+              <label for="experience_7">&gt;6 Years</label>
+            </div>
+        </div>
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>    </div>
+
+    <div class="form-flow__actions onboarding__actions">
+      <a
+        class="default-color"
+        data-action="flow-switch"
+        data-target="professional"
+        onclick="window.trackGaEvent('onboarding', 'career-panel-back')"
+      >
+        Back
+      </a>
+      <input
+        type="submit"
+        class="onboarding__action"
+        value="Finish"
+      />
+    </div>
+  </form>
+</div>
+
+    </div>
+
+    <div class="form-flow__mode onboarding__confirmation" data-mode="confirmation">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/confirmation-7e413aebd0329b44988fe9534380bc90e6c4d5bb3f3e81cef8c034a4a7731fa9.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          You're all set!
+        </h2>
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+<div id="auth-modal" class="sr-modal form-flow auth">
+  <div class="sr-modal__content sr-modal__content--right">
+      <div class="sr-modal__header">
+        <a class="sr-modal__close" data-target="auth-modal" data-action="modal-close">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+    <div class="sr-modal__body ">
+      
+  <div class="form-flow__modes auth__modes">
+    <div class="form-flow__mode form-flow__mode--active" data-mode="register">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/signup-5f66d5e693f87620edbae9b37e48961092c1681f21bd63a33bf5d69f6fffb482.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Begin your success journey!
+        </h2>
+      </div>
+      <div class="form-flow__subtitle">Sign Up using</div>
+
+      <div class="auth-providers">
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/google_oauth2/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'google')"
+  >
+    <img data-gtm-element="google" src="https://assets.interviewbit.com/assets/ibpp/onboarding/google-36d787f315453b7698d0f060d807e211b297198aa30b2fa59d2af526d1035e92.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/facebook/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'facebook')"
+  >
+    <img data-gtm-element="facebook" src="https://assets.interviewbit.com/assets/ibpp/onboarding/facebook-ce5cc4f440dc3cb23e5a7bbe9db41da57804f29595c83dd7b603ac79c8034724.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/linkedin/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'linkedin')"
+  >
+    <img data-gtm-element="linkedin" src="https://assets.interviewbit.com/assets/ibpp/onboarding/linkedin-eba2839477afbc53e085df2352f4388f3470879ff9e191826d619cac64452992.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/github/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'github')"
+  >
+    <img data-gtm-element="github" src="https://assets.interviewbit.com/assets/ibpp/onboarding/github-e7de13c97e442cae5b2791c0045dbc2a2752b60a246dbbadd15f7e08b58183b9.svg.gz">
+  </a>
+</div>
+
+
+      <div class="form-flow__form">
+        <form id="register-form" class="form" action="/users/" accept-charset="UTF-8"
+  method="post" autocomplete="none"
+  onsubmit="window.trackGaEvent('onboarding', 'signup-continue-clicked')"
+>
+  <input type="hidden" name="authenticity_token" id="authenticity_token" value="Sa4ckU0Ijjl39lwm4lB0iL4Bj1sbn3ygQB1ZwMn6X6BPj9WiKLCxw2wV3MXEdukBAhYLBioaOj08ArmmMycJrA==" />  <div class="form__fields">
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Full name
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[name]"
+        placeholder="Enter your name"
+        required
+        type="text"
+        data-gtm-element="name"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Email
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[email]"
+        placeholder="Enter your email"
+        required
+        type="email"
+        data-gtm-element="email"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="password"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Password
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[password]"
+        autocomplete="off"
+        placeholder="Enter your password"
+        required
+        type="password"
+        pattern=".{8,}"
+        title="Password must contain at least 8 characters."
+        data-gtm-element="password"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>  </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div class="g-recaptcha " data-sitekey="6Lf3ngcTAAAAAAc199lejBXaJ5ZQbLp6MXHoRgWj"></div>
+          <noscript>
+            <div>
+              <div style="width: 302px; height: 422px; position: relative;">
+                <div style="width: 302px; height: 422px; position: absolute;">
+                  <iframe
+                    src="https://www.google.com/recaptcha/api/fallback?k=6Lf3ngcTAAAAAAc199lejBXaJ5ZQbLp6MXHoRgWj"
+                    frameborder="0" scrolling="no"
+                    style="width: 302px; height:422px; border-style: none;">
+                  </iframe>
+                </div>
+              </div>
+              <div style="width: 300px; height: 60px; border-style: none;
+                bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+                background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                  class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+                  margin: 10px 25px; padding: 0px; resize: none;" value="">
+                </textarea>
+              </div>
+            </div>
+          </noscript>
+
+  <p class="form-error form-error--hidden"></p>
+
+  <div class="form__actions">
+    <button
+      class="form__action ibpp-button primary"
+      type="submit"
+    >
+      Continue
+    </button>
+  </div>
+  <div class="hint-color h6">
+    By creating an account, I acknowledge that I have read and agree to InterviewBit’s
+    <a class="link bold m-h-5 h6" href="/pages/terms/">
+      Terms
+    </a>
+    and
+    <a class="link bold m-h-5 h6" href="/pages/privacy/">
+      Privacy Policy
+    </a>.
+  </div>
+  <label class="m-t-15">
+    Already have an account?
+    <a
+      class="auth__switch auth__switch--primary link bold gtm-track-element"
+      data-action="flow-switch"
+      data-target="login"
+      data-gtm-element="login"
+      data-gtm-allowed-actions="click hover"
+      onclick="window.trackGaEvent('onboarding', 'signup-to-signin')"
+    >
+      Log in
+    </a>
+  </label>
+</form>
+
+      </div>
+    </div>
+
+    <div class="form-flow__mode auth__mode" data-mode="login">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/signup-5f66d5e693f87620edbae9b37e48961092c1681f21bd63a33bf5d69f6fffb482.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Welcome back!
+        </h2>
+      </div>
+      <div class="form-flow__subtitle">Log In using</div>
+
+      <div class="auth-providers">
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/google_oauth2/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'google')"
+  >
+    <img data-gtm-element="google" src="https://assets.interviewbit.com/assets/ibpp/onboarding/google-36d787f315453b7698d0f060d807e211b297198aa30b2fa59d2af526d1035e92.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/facebook/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'facebook')"
+  >
+    <img data-gtm-element="facebook" src="https://assets.interviewbit.com/assets/ibpp/onboarding/facebook-ce5cc4f440dc3cb23e5a7bbe9db41da57804f29595c83dd7b603ac79c8034724.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/linkedin/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'linkedin')"
+  >
+    <img data-gtm-element="linkedin" src="https://assets.interviewbit.com/assets/ibpp/onboarding/linkedin-eba2839477afbc53e085df2352f4388f3470879ff9e191826d619cac64452992.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/github/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'github')"
+  >
+    <img data-gtm-element="github" src="https://assets.interviewbit.com/assets/ibpp/onboarding/github-e7de13c97e442cae5b2791c0045dbc2a2752b60a246dbbadd15f7e08b58183b9.svg.gz">
+  </a>
+</div>
+
+
+      <div class="auth__form">
+        <form
+  id="login-form" action="/users/sign_in/" accept-charset="UTF-8"
+  method="post" class="form" autocomplete="none"
+  onsubmit="window.trackGaEvent('onboarding', 'signin-continue-clicked')"
+>
+  <input type="hidden" name="authenticity_token" id="authenticity_token" value="zEIqj7e8CtjJBEref2S7TSKq+YrEAJqtbECUAjDbgtzKY+O80gQ1ItLnyj1ZQibEnr191/WF3DAQX3RkygbU0A==" />
+  <input name="utf8" type="hidden" value="✓">
+  <div class="form__fields">
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Email
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[email]"
+        placeholder="Enter your email"
+        required
+        type="email"
+        data-gtm-element="email"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="password"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Password
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[password]"
+        placeholder="Enter your password"
+        required
+        type="password"
+        data-gtm-element="password"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    <div
+      class="form-field"
+      data-name="remember_me"
+    >
+      <input
+        class="form-input--inline gtm-track-element"
+        type="checkbox"
+        id="rememberme"
+        name="user[remember_me]"
+        checked=""
+        data-gtm-element="remember_me"
+        data-gtm-allowed-actions="click"
+      />
+      <label class="m-l-10" for="rememberme">Remember Me</label>
+    </div>
+  </div>
+  <p class="form-error form-error--hidden"></p>
+
+  <div class="form__actions">
+    <button
+      class="form__action ibpp-button primary gtm-track-element"
+      type="submit"
+      data-gtm-element="login"
+      data-gtm-allowed-actions="click"
+    >
+      Continue
+    </button>
+  </div>
+  <div class="m-v-10">
+    <div class="m-b-10">
+      <a
+        href="/users/password/new/"
+        class="link bold gtm-track-element"
+        data-gtm-element="forgot_password"
+        data-gtm-allowed-actions="click hover"
+      >
+        Forgot Password
+      </a>
+    </div>
+    <div class="m-b-10">
+      <a
+        href="/users/confirmation/new/"
+        class="link bold gtm-track-element"
+        data-gtm-element="confirmation_instruction"
+        data-gtm-allowed-actions="click hover"
+      >
+        Didn’t receive confirmation instructions?
+      </a>
+    </div>
+    <label class="m-b-10">
+      Not an InterviewBit user?
+      <a
+        class="link bold m-l-5 gtm-track-element"
+        data-action="flow-switch"
+        data-target="register"
+        data-gtm-element="sign_up"
+        data-gtm-allowed-actions="click hover"
+        onclick="window.trackGaEvent('onboarding', 'signin-to-signup')"
+      >
+        Sign up
+      </a>
+    </label>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+
+  <article class="ibpage">
+    
+<section>
+  <header class="ibpage__header flex-row space-between">
+    <div class="flex-row align-c">
+      <h1>OOPs Interview Questions</h1>
+    </div>
+    
+<a
+  class="responsive hidden ibpage__downloadable-a ibpage__downloadable download-pdf"
+  data-source="top_cta"
+>
+  <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+  <span class="responsive text">Download PDF</span>
+</a>
+
+<a
+  class="auth-trigger gtm-track-element hidden ibpage__downloadable ibpage__downloadable-a enforce-signin responsive"
+  onclick="window.trackGaEvent('onboarding', 'signin-cta-clicked', '&lt;span&gt;&lt;img src=&quot;https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz&quot;&gt;&lt;/img&gt;&lt;/span&gt; &lt;span class=&quot;responsive text&quot;&gt;Download PDF&lt;/span&gt;')"
+  style=""
+  href=javascript:void(0)
+  data-action="flow-trigger"
+  data-target="auth"
+  data-mode="login"
+  data-gtm-element="login"
+  data-gtm-allowed-actions="click hover"
+  data-source="top_cta"
+>
+  
+  <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+  <span class="responsive text">Download PDF</span>
+
+</a>
+
+<a id="auto-download-modal-trigger" class="modal-trigger hidden gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="button" data-gtm-parent="auto-download-modal" data-action="modal-open" data-target="auto-download-modal" onclick="">
+  
+  &nbsp;
+
+</a>
+<div id="auto-download-modal" class="sr-modal ">
+  <div class="sr-modal__content sr-modal__content--center">
+    <div class="sr-modal__body ">
+      
+  <div class="p-h-10 p-v-10">
+    <h3>Download PDF</h3>
+    <hr />
+    <div class="m-v-10 text-center">
+      Your requested download is ready!<br>
+      Click
+      <a
+        class="pointer"
+        data-source="top_cta"
+        data-action="start-download"
+      >
+        here
+      </a>
+      to download.
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div class="social-share hidden-xs">
+      <div class="">
+        <span>Share with: <span>
+      </div>
+
+      <div class="social-share__item">
+        <a href="https://www.linkedin.com/shareArticle?mini=true&url=https://www.interviewbit.com/oops-interview-questions/&title=40+ OOPs Interview Questions and Answers (2021) - InterviewBit&summary=40+ OOPs Interview Questions and Answers (2021) - InterviewBit&source=Interviewbit" target="_blank" onclick="google_analytics_tracking('linkedin')">
+          <i class="fa fa-linkedin-square"></i>
+        </a>
+      </div>
+      <div class="social-share__item">
+        <a href="https://www.facebook.com/v2.9/dialog/share?app_id=314158428787536&href=https://www.interviewbit.com/oops-interview-questions/&quote=Learn and Practice on almost all coding interview questions asked historically and get referred to the best tech companies&display=page&redirect_uri=https://www.interviewbit.com/oops-interview-questions/" target="_blank" onclick="google_analytics_tracking('facebook')">
+          <i class="fa fa-facebook-square"></i>
+        </a>
+      </div>
+      <div class="social-share__item">
+        <a href="https://twitter.com/intent/tweet?status=40+ OOPs Interview Questions and Answers (2021) - InterviewBit&url=https://www.interviewbit.com/oops-interview-questions/&via=Interview_Bit" target="_blank" onclick="google_analytics_tracking('twitter')">
+          <i class="fa fa-twitter"></i>
+        </a>
+      </div>
+      <div class="social-share__item">
+        <a href="javascript:void(0)" onclick="copyToClipboard(event)">
+          <i class="fa fa-copy"></i>
+        </a>
+        <input type="text" value="https://www.interviewbit.com/oops-interview-questions/" id="copy-field">
+        <p class="social-share__text">Copied</p>
+      </div>
+    </div>
+  </header>
+</section>
+
+
+<div id="auth-modal" class="sr-modal form-flow auth">
+  <div class="sr-modal__content sr-modal__content--right">
+      <div class="sr-modal__header">
+        <a class="sr-modal__close" data-target="auth-modal" data-action="modal-close">
+          <i class="icon-close"></i>
+        </a>
+      </div>
+    <div class="sr-modal__body ">
+      
+  <div class="form-flow__modes auth__modes">
+    <div class="form-flow__mode form-flow__mode--active" data-mode="register">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/signup-5f66d5e693f87620edbae9b37e48961092c1681f21bd63a33bf5d69f6fffb482.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Begin your success journey!
+        </h2>
+      </div>
+      <div class="form-flow__subtitle">Sign Up using</div>
+
+      <div class="auth-providers">
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/google_oauth2/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'google')"
+  >
+    <img data-gtm-element="google" src="https://assets.interviewbit.com/assets/ibpp/onboarding/google-36d787f315453b7698d0f060d807e211b297198aa30b2fa59d2af526d1035e92.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/facebook/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'facebook')"
+  >
+    <img data-gtm-element="facebook" src="https://assets.interviewbit.com/assets/ibpp/onboarding/facebook-ce5cc4f440dc3cb23e5a7bbe9db41da57804f29595c83dd7b603ac79c8034724.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/linkedin/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'linkedin')"
+  >
+    <img data-gtm-element="linkedin" src="https://assets.interviewbit.com/assets/ibpp/onboarding/linkedin-eba2839477afbc53e085df2352f4388f3470879ff9e191826d619cac64452992.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/github/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'github')"
+  >
+    <img data-gtm-element="github" src="https://assets.interviewbit.com/assets/ibpp/onboarding/github-e7de13c97e442cae5b2791c0045dbc2a2752b60a246dbbadd15f7e08b58183b9.svg.gz">
+  </a>
+</div>
+
+
+      <div class="form-flow__form">
+        <form id="register-form" class="form" action="/users/" accept-charset="UTF-8"
+  method="post" autocomplete="none"
+  onsubmit="window.trackGaEvent('onboarding', 'signup-continue-clicked')"
+>
+  <input type="hidden" name="authenticity_token" id="authenticity_token" value="z44cGYotMPhYj7shtKE6MTho+JJrhn6URDdCFXTVYNDJr9Uq75UPAkNsO8KSh6e4hH98z1oDOAk4KKJzjgg23A==" />  <div class="form__fields">
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Full name
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[name]"
+        placeholder="Enter your name"
+        required
+        type="text"
+        data-gtm-element="name"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Email
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[email]"
+        placeholder="Enter your email"
+        required
+        type="email"
+        data-gtm-element="email"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="password"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Password
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[password]"
+        autocomplete="off"
+        placeholder="Enter your password"
+        required
+        type="password"
+        pattern=".{8,}"
+        title="Password must contain at least 8 characters."
+        data-gtm-element="password"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>  </div>
+  <script src="https://www.google.com/recaptcha/api.js" async defer></script>
+<div class="g-recaptcha " data-sitekey="6Lf3ngcTAAAAAAc199lejBXaJ5ZQbLp6MXHoRgWj"></div>
+          <noscript>
+            <div>
+              <div style="width: 302px; height: 422px; position: relative;">
+                <div style="width: 302px; height: 422px; position: absolute;">
+                  <iframe
+                    src="https://www.google.com/recaptcha/api/fallback?k=6Lf3ngcTAAAAAAc199lejBXaJ5ZQbLp6MXHoRgWj"
+                    frameborder="0" scrolling="no"
+                    style="width: 302px; height:422px; border-style: none;">
+                  </iframe>
+                </div>
+              </div>
+              <div style="width: 300px; height: 60px; border-style: none;
+                bottom: 12px; left: 25px; margin: 0px; padding: 0px; right: 25px;
+                background: #f9f9f9; border: 1px solid #c1c1c1; border-radius: 3px;">
+                <textarea id="g-recaptcha-response" name="g-recaptcha-response"
+                  class="g-recaptcha-response"
+                  style="width: 250px; height: 40px; border: 1px solid #c1c1c1;
+                  margin: 10px 25px; padding: 0px; resize: none;" value="">
+                </textarea>
+              </div>
+            </div>
+          </noscript>
+
+  <p class="form-error form-error--hidden"></p>
+
+  <div class="form__actions">
+    <button
+      class="form__action ibpp-button primary"
+      type="submit"
+    >
+      Continue
+    </button>
+  </div>
+  <div class="hint-color h6">
+    By creating an account, I acknowledge that I have read and agree to InterviewBit’s
+    <a class="link bold m-h-5 h6" href="/pages/terms/">
+      Terms
+    </a>
+    and
+    <a class="link bold m-h-5 h6" href="/pages/privacy/">
+      Privacy Policy
+    </a>.
+  </div>
+  <label class="m-t-15">
+    Already have an account?
+    <a
+      class="auth__switch auth__switch--primary link bold gtm-track-element"
+      data-action="flow-switch"
+      data-target="login"
+      data-gtm-element="login"
+      data-gtm-allowed-actions="click hover"
+      onclick="window.trackGaEvent('onboarding', 'signup-to-signin')"
+    >
+      Log in
+    </a>
+  </label>
+</form>
+
+      </div>
+    </div>
+
+    <div class="form-flow__mode auth__mode" data-mode="login">
+      <div class="form-flow__header">
+        <div class="form-flow__img">
+          <img src="https://assets.interviewbit.com/assets/ibpp/onboarding/signup-5f66d5e693f87620edbae9b37e48961092c1681f21bd63a33bf5d69f6fffb482.svg.gz" />
+        </div>
+        <h2 class="form-flow__title dark bolder">
+          Welcome back!
+        </h2>
+      </div>
+      <div class="form-flow__subtitle">Log In using</div>
+
+      <div class="auth-providers">
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/google_oauth2/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'google')"
+  >
+    <img data-gtm-element="google" src="https://assets.interviewbit.com/assets/ibpp/onboarding/google-36d787f315453b7698d0f060d807e211b297198aa30b2fa59d2af526d1035e92.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/facebook/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'facebook')"
+  >
+    <img data-gtm-element="facebook" src="https://assets.interviewbit.com/assets/ibpp/onboarding/facebook-ce5cc4f440dc3cb23e5a7bbe9db41da57804f29595c83dd7b603ac79c8034724.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/linkedin/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'linkedin')"
+  >
+    <img data-gtm-element="linkedin" src="https://assets.interviewbit.com/assets/ibpp/onboarding/linkedin-eba2839477afbc53e085df2352f4388f3470879ff9e191826d619cac64452992.svg.gz">
+  </a>
+  <a
+    data-gtm-allowed-actions="click hover"
+    href="/users/auth/github/"
+    class="auth-providers__action"
+    onclick="window.trackGaEvent('onboarding', 'auth_provider_clicked', 'github')"
+  >
+    <img data-gtm-element="github" src="https://assets.interviewbit.com/assets/ibpp/onboarding/github-e7de13c97e442cae5b2791c0045dbc2a2752b60a246dbbadd15f7e08b58183b9.svg.gz">
+  </a>
+</div>
+
+
+      <div class="auth__form">
+        <form
+  id="login-form" action="/users/sign_in/" accept-charset="UTF-8"
+  method="post" class="form" autocomplete="none"
+  onsubmit="window.trackGaEvent('onboarding', 'signin-continue-clicked')"
+>
+  <input type="hidden" name="authenticity_token" id="authenticity_token" value="rUT0hIGh8xIF4llGsMSGXdBl+/AQLltJz5P2DKRkt6GrZT235BnM6B4B2aWW4hvUbHJ/rSGrHdSzjBZqXrnhrQ==" />
+  <input name="utf8" type="hidden" value="✓">
+  <div class="form__fields">
+    
+<div
+  class="form-field "
+  data-name="email"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Email
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[email]"
+        placeholder="Enter your email"
+        required
+        type="email"
+        data-gtm-element="email"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    
+<div
+  class="form-field "
+  data-name="password"
+>
+    <div class="form-field__label">
+      
+<div class="form-label">
+  <div class="form-label__text">
+    Password
+      <span class="form-label__required">*</span>
+  </div>
+</div>
+    </div>
+  <div class="form-field__input">
+    
+      <input
+        class="form-input gtm-track-element"
+        name="user[password]"
+        placeholder="Enter your password"
+        required
+        type="password"
+        data-gtm-element="password"
+      />
+
+  </div>
+  <div class="form-field__error form-field__error--hidden">
+  </div>
+</div>
+    <div
+      class="form-field"
+      data-name="remember_me"
+    >
+      <input
+        class="form-input--inline gtm-track-element"
+        type="checkbox"
+        id="rememberme"
+        name="user[remember_me]"
+        checked=""
+        data-gtm-element="remember_me"
+        data-gtm-allowed-actions="click"
+      />
+      <label class="m-l-10" for="rememberme">Remember Me</label>
+    </div>
+  </div>
+  <p class="form-error form-error--hidden"></p>
+
+  <div class="form__actions">
+    <button
+      class="form__action ibpp-button primary gtm-track-element"
+      type="submit"
+      data-gtm-element="login"
+      data-gtm-allowed-actions="click"
+    >
+      Continue
+    </button>
+  </div>
+  <div class="m-v-10">
+    <div class="m-b-10">
+      <a
+        href="/users/password/new/"
+        class="link bold gtm-track-element"
+        data-gtm-element="forgot_password"
+        data-gtm-allowed-actions="click hover"
+      >
+        Forgot Password
+      </a>
+    </div>
+    <div class="m-b-10">
+      <a
+        href="/users/confirmation/new/"
+        class="link bold gtm-track-element"
+        data-gtm-element="confirmation_instruction"
+        data-gtm-allowed-actions="click hover"
+      >
+        Didn’t receive confirmation instructions?
+      </a>
+    </div>
+    <label class="m-b-10">
+      Not an InterviewBit user?
+      <a
+        class="link bold m-l-5 gtm-track-element"
+        data-action="flow-switch"
+        data-target="register"
+        data-gtm-element="sign_up"
+        data-gtm-allowed-actions="click hover"
+        onclick="window.trackGaEvent('onboarding', 'signin-to-signup')"
+      >
+        Sign up
+      </a>
+    </label>
+  </div>
+</form>
+
+      </div>
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+
+
+    <div class="ibpage__content container-fluid">
+      <div class="hidden-xs col-sm-3">
+        <nav class="ibpage__sidebar">
+  <ul class="nav">
+    <li>
+      <a href="#basic-oops-interview-questions" title="Basic OOPs Interview Questions">Basic OOPs Interview Questions</a>
+        <ul class="nav">
+            <li>
+              <a href="#object-oriented-programming" title="What is meant by the term OOPs?">
+                <span class="m-r-5">1.</span>
+                <span>What is meant by the term OOPs?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#why-we-need-oops-in-programming-language" title="What is the need for OOPs?">
+                <span class="m-r-5">2.</span>
+                <span>What is the need for OOPs?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#object-oriented-programming-languages" title="What are some major Object Oriented Programming languages?">
+                <span class="m-r-5">3.</span>
+                <span>What are some major Object Oriented Programming languages?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#programming-paradigms" title="What are some other programming paradigms other than OOPs?">
+                <span class="m-r-5">4.</span>
+                <span>What are some other programming paradigms other than OOPs?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#structured-programming" title="What is meant by Structured Programming?">
+                <span class="m-r-5">5.</span>
+                <span>What is meant by Structured Programming?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-features" title="What are the main features of OOPs?">
+                <span class="m-r-5">6.</span>
+                <span>What are the main features of OOPs?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#advantages-of-oops" title="What are some advantages of using OOPs?">
+                <span class="m-r-5">7.</span>
+                <span>What are some advantages of using OOPs?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#why-oops-is-popular" title="Why is OOPs so popular?">
+                <span class="m-r-5">8.</span>
+                <span>Why is OOPs so popular?</span>
+              </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+      <a href="#advanced-oops-interview-questions" title="Advanced OOPs Interview Questions ">Advanced OOPs Interview Questions </a>
+        <ul class="nav">
+            <li>
+              <a href="#oops-class" title="What is a class?">
+                <span class="m-r-5">9.</span>
+                <span>What is a class?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-object" title="What is an object?">
+                <span class="m-r-5">10.</span>
+                <span>What is an object?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-encapsulation" title="What is encapsulation?">
+                <span class="m-r-5">11.</span>
+                <span>What is encapsulation?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-polymorphism" title="What is Polymorphism?">
+                <span class="m-r-5">12.</span>
+                <span>What is Polymorphism?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#difference-between-compile-time-and-run-time-polymorphism" title="What is Compile time Polymorphism and how is it different from Runtime Polymorphism?">
+                <span class="m-r-5">13.</span>
+                <span>What is Compile time Polymorphism and how is it different from Runtime Polymorphism?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#polymorphism-in-c" title="How does C++ support Polymorphism?">
+                <span class="m-r-5">14.</span>
+                <span>How does C++ support Polymorphism?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-inheritance" title="What is meant by Inheritance?">
+                <span class="m-r-5">15.</span>
+                <span>What is meant by Inheritance?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-abstraction" title="What is Abstraction?">
+                <span class="m-r-5">16.</span>
+                <span>What is Abstraction?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#class-memory-allocation" title=" How much memory does a class occupy?">
+                <span class="m-r-5">17.</span>
+                <span> How much memory does a class occupy?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#necessary-to-create-objects-from-class" title="Is it always necessary to create objects from class?">
+                <span class="m-r-5">18.</span>
+                <span>Is it always necessary to create objects from class?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-constructor" title="What is a constructor?">
+                <span class="m-r-5">19.</span>
+                <span>What is a constructor?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#constructors-c" title="What are the various types of constructors in C++?">
+                <span class="m-r-5">20.</span>
+                <span>What are the various types of constructors in C++?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#copy-constructor" title="What is a copy constructor?">
+                <span class="m-r-5">21.</span>
+                <span>What is a copy constructor?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#destructors" title="What is a destructor?">
+                <span class="m-r-5">22.</span>
+                <span>What is a destructor?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#difference-between-class-and-structure" title="Are class and structure the same? If not, what&#39;s the difference between a class and a structure?">
+                <span class="m-r-5">23.</span>
+                <span>Are class and structure the same? If not, what&#39;s the difference between a class and a structure?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#inheritance-example" title="Explain Inheritance with an example?">
+                <span class="m-r-5">24.</span>
+                <span>Explain Inheritance with an example?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#inheritance-limitations" title=" Are there any limitations of Inheritance?">
+                <span class="m-r-5">25.</span>
+                <span> Are there any limitations of Inheritance?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#types-of-inheritance" title="What are the various types of inheritance?">
+                <span class="m-r-5">26.</span>
+                <span>What are the various types of inheritance?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#subclass" title="What is a subclass?">
+                <span class="m-r-5">27.</span>
+                <span>What is a subclass?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#superclass" title="Define a superclass?">
+                <span class="m-r-5">28.</span>
+                <span>Define a superclass?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#interface" title="What is an interface?">
+                <span class="m-r-5">29.</span>
+                <span>What is an interface?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#static-polymorphism" title="What is meant by static polymorphism?">
+                <span class="m-r-5">30.</span>
+                <span>What is meant by static polymorphism?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#dynamic-polymorphism" title="What is meant by dynamic polymorphism?">
+                <span class="m-r-5">31.</span>
+                <span>What is meant by dynamic polymorphism?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#overloading-vs-overriding" title="What is the difference between overloading and overriding?">
+                <span class="m-r-5">32.</span>
+                <span>What is the difference between overloading and overriding?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#data-abstraction-accomplished" title="How is data abstraction accomplished?">
+                <span class="m-r-5">33.</span>
+                <span>How is data abstraction accomplished?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#abstract-class" title="What is an abstract class?">
+                <span class="m-r-5">34.</span>
+                <span>What is an abstract class?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#abstract-class-vs-interface" title="How is an abstract class different from an interface?">
+                <span class="m-r-5">35.</span>
+                <span>How is an abstract class different from an interface?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#oops-access-specifiers" title="What are access specifiers and what is their significance?">
+                <span class="m-r-5">36.</span>
+                <span>What are access specifiers and what is their significance?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#exception" title="What is an exception?">
+                <span class="m-r-5">37.</span>
+                <span>What is an exception?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#exception-handling" title="What is meant by exception handling?">
+                <span class="m-r-5">38.</span>
+                <span>What is meant by exception handling?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#garbage-collection-in-oops" title="What is meant by Garbage Collection in OOPs world?">
+                <span class="m-r-5">39.</span>
+                <span>What is meant by Garbage Collection in OOPs world?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#run-java-application-without-oops" title="Can we run a Java application without implementing the OOPs concept?">
+                <span class="m-r-5">40.</span>
+                <span>Can we run a Java application without implementing the OOPs concept?</span>
+              </a>
+            </li>
+        </ul>
+    </li>
+    <li>
+      <a href="#oops-coding-problems" title="OOPs Coding Problems">OOPs Coding Problems</a>
+        <ul class="nav">
+            <li>
+              <a href="#code-output" title="What is the output of the below code?">
+                <span class="m-r-5">41.</span>
+                <span>What is the output of the below code?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#find-the-code-output" title="What will be the output of the below code?">
+                <span class="m-r-5">42.</span>
+                <span>What will be the output of the below code?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#predict-output" title="Predict the output?">
+                <span class="m-r-5">43.</span>
+                <span>Predict the output?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#below-code-output" title="What will be the output in below code?">
+                <span class="m-r-5">44.</span>
+                <span>What will be the output in below code?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#what-is-the-output" title="Predict the output?">
+                <span class="m-r-5">45.</span>
+                <span>Predict the output?</span>
+              </a>
+            </li>
+            <li>
+              <a href="#program-output" title="What is the output of the below program?">
+                <span class="m-r-5">46.</span>
+                <span>What is the output of the below program?</span>
+              </a>
+            </li>
+        </ul>
+    </li>
+
+    <li>
+      <a href="#oops-interview-mcqs" title="Oops interview MCQs">
+        Oops interview MCQs
+      </a>
+    </li>
+  </ul>
+</nav>
+
+
+      </div>
+      <section class="ibpage__details col-sm-9">
+        <!-- Artilce Block START -->
+        <section class="ibpage__articles">
+            <article>
+              <p>OOPs, or Object-Oriented Programming is a programming model or paradigm which revolves around the concept of “<strong>OBJECTS</strong>”. Objects can be considered as real-world instances of entities like class, that contain some characteristics and behaviors specified in the class template.</p><p>In simple language, a class can be considered as the blueprint or template, based on which objects can be created. So the Objects are considered the instance of a class, and are therefore sometimes called “<strong>instances</strong>”. The term “<strong>characteristics</strong>” refers to the “what” about the Object, and the term “<strong>behavior</strong>” refers to the “how” about the Object.</p><p>For example, if we consider a car, then based on the OOPs model:</p><ul>
+<li>Class = A specific car model, such as Audi A4, BMW I8, Maruti Suzuki Vitara Brezza, etc.</li>
+<li>Object = A specific car of any model, like the car you own</li>
+<li>Characteristics = What is the color of your car? What is the Chassis number of your car? etc</li>
+<li>Behavior = How to start the car? How to change the gear of the car? etc.</li>
+</ul><p>Characteristics are also known as data, attributes, or properties, and Behaviours are also known as the functions, procedures or methods, in the programming language.</p><p>The concept of “objects” allows the OOPs model to easily access, use and modify the instance data and methods, interact with other objects, and define methods in runtime (during the execution of the program). This gives the OOPs model significance and makes it diverse in its implementation.</p><p>In fact, the OOPs model is so popular, that many of the most widely used programming languages support and use this Object Oriented Programming or OOPs model, such as Java, C++, Python, C#, etc.</p>
+            </article>
+          
+<div class="ibpage__ibanner">
+  <div class="ibpage__ibanner-top">
+    <div class="ibpage__ibanner-content">
+      <div class="ibpage__ibanner-header">
+        Crack your next tech interview with confidence!
+      </div>
+      <div class="ibpage__ibanner-subheader">
+        Take a free mock interview, get instant⚡️ feedback and recommendation💡
+      </div>
+    </div>
+    <div class="ibpage__ibanner-action">
+      <a
+        id="in-interview-guide-button"
+        class="ibpage__ibanner-button"
+        target="_blank"
+        href="https://www.scaler.com/event/mock-coding-interview/?utm_source=ib&utm_medium=in-interview-guide&utm_campaign=MoCo&utm_content=/oops-interview-questions/"
+      >
+        Take Free Mock Interview
+      </a>
+    </div>
+  </div>
+  <div class="ibpage__ibanner-sep"></div>
+  <div class="ibpage__ibanner-bottom">
+    <div class="ibpage__ibanner-companies">
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half google"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half microsoft"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half amazon"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half zomato"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half visa"></span>
+        </div>
+        <div class="ibpage__ibanner-company">
+          <span class="testimonial_companies half makemytrip"></span>
+        </div>
+    </div>
+  </div>
+</div>
+
+            <div id="basic-oops-interview-questions">
+    <h2>Basic OOPs Interview Questions</h2>
+
+        <section id="object-oriented-programming">
+          <h3>1. What is meant by the term OOPs?</h3>
+          <article class="ibpage-article">
+            <p>OOPs refers to Object-Oriented Programming. It is the programming paradigm that is defined using objects. Objects can be considered as real-world instances of entities like class, that have some characteristics and behaviors.</p>
+          </article>
+        </section>
+        <section id="why-we-need-oops-in-programming-language">
+          <h3>2. What is the need for OOPs?</h3>
+          <article class="ibpage-article">
+            <p>There are many reasons why OOPs is mostly preferred, but the most important among them are: </p><ul>
+<li>OOPs helps users to understand the software easily, although they don’t know the actual implementation.</li>
+<li>With OOPs, the readability, understandability, and maintainability of the code increase multifold.</li>
+<li>Even very big software can be easily written and managed easily using OOPs.</li>
+</ul>
+          </article>
+        </section>
+        <section id="object-oriented-programming-languages">
+          <h3>3. What are some major Object Oriented Programming languages?</h3>
+          <article class="ibpage-article">
+            <p>The programming languages that use and follow the Object-Oriented Programming paradigm or OOPs, are known as Object-Oriented Programming languages. Some of the major Object-Oriented Programming languages include:</p><ul>
+<li>Java</li>
+<li>C++</li>
+<li>Javascript</li>
+<li>Python</li>
+<li>PHP</li>
+</ul><p>And many more.</p>
+          </article>
+        </section>
+          <div class="ibpage__download-container">
+  <div class="ibpage__download-banner">
+    <div class="ibpage__download-text">
+      <i class="icon-bell"></i>
+      <span>
+        You can download a PDF version of Oops Interview Questions.
+      </span>
+    </div>
+    <div class="ibpage__download-action">
+      
+<a
+  class=" hidden ibpage__downloadable-a ibpage__downloadable download-pdf"
+  data-source="in_content"
+>
+  <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+  <span class=" text">Download PDF</span>
+</a>
+
+<a
+  class="auth-trigger gtm-track-element hidden ibpage__downloadable ibpage__downloadable-a enforce-signin "
+  onclick="window.trackGaEvent('onboarding', 'signin-cta-clicked', '&lt;span&gt;&lt;img src=&quot;https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz&quot;&gt;&lt;/img&gt;&lt;/span&gt; &lt;span class=&quot; text&quot;&gt;Download PDF&lt;/span&gt;')"
+  style=""
+  href=javascript:void(0)
+  data-action="flow-trigger"
+  data-target="auth"
+  data-mode="login"
+  data-gtm-element="login"
+  data-gtm-allowed-actions="click hover"
+  data-source="in_content"
+>
+  
+  <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+  <span class=" text">Download PDF</span>
+
+</a>
+
+<a id="auto-download-modal-trigger" class="modal-trigger hidden gtm-track-element" data-gtm-allowed-actions="click" data-gtm-type="button" data-gtm-parent="auto-download-modal" data-action="modal-open" data-target="auto-download-modal" onclick="">
+  
+  &nbsp;
+
+</a>
+<div id="auto-download-modal" class="sr-modal ">
+  <div class="sr-modal__content sr-modal__content--center">
+    <div class="sr-modal__body ">
+      
+  <div class="p-h-10 p-v-10">
+    <h3>Download PDF</h3>
+    <hr />
+    <div class="m-v-10 text-center">
+      Your requested download is ready!<br>
+      Click
+      <a
+        class="pointer"
+        data-source="in_content"
+        data-action="start-download"
+      >
+        here
+      </a>
+      to download.
+    </div>
+  </div>
+
+    </div>
+  </div>
+</div>
+
+    </div>
+  </div>
+</div>
+        <section id="programming-paradigms">
+          <h3>4. What are some other programming paradigms other than OOPs?</h3>
+          <article class="ibpage-article">
+            <p>Programming paradigms refers to the method of classification of programming languages based on their features. There are mainly two types of Programming Paradigms:</p><ul>
+<li>Imperative Programming Paradigm</li>
+<li>Declarative Programming Paradigm</li>
+</ul><p>Now, these paradigms can be further classified based:<br><br><strong>1. Imperative Programming Paradigm</strong>: Imperative programming focuses on HOW to execute program logic and defines control flow as statements that change a program state. This can be further classified as:<br>a) <u>Procedural Programming Paradigm:</u> Procedural programming specifies the steps a program must take to reach the desired state, usually read in order from top to bottom.<br>b) <u>Object-Oriented Programming or OOP</u>: Object-oriented programming (OOP) organizes programs as objects, that contain some data and have some behavior.<br>c) <u>Parallel Programming</u>: Parallel programming paradigm breaks a task into subtasks and focuses on executing them simultaneously at the same time.<br><br><strong>2. Declarative Programming Paradigm</strong>: Declarative programming focuses on WHAT to execute and defines program logic, but not a detailed control flow. Declarative paradigm can be further classified into:<br>a) <u>Logical Programming Paradigm</u>: Logical programming paradigm is based on formal logic, which refers to a set of sentences expressing facts and rules about how to solve a problem<br>b) <u>Functional Programming Paradigm</u>: Functional programming is a programming paradigm where programs are constructed by applying and composing functions.<br>c) <u>Database Programming Paradigm</u>: Database programming model is used to manage data and information structured as fields, records, and files.</p><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/060/original/programming-paradigms.png?1614861291"></figure>
+          </article>
+        </section>
+        <section id="structured-programming">
+          <h3>5. What is meant by Structured Programming?</h3>
+          <article class="ibpage-article">
+            <p><strong>Structured Programming</strong> refers to the method of programming which consists of a completely structured control flow. Here structure refers to a block, which contains a set of rules, and has a definitive control flow, such as (if/then/else), (while and for), block structures, and subroutines.</p><p>Nearly all programming paradigms include Structured programming, including the OOPs model.</p>
+          </article>
+        </section>
+        <section id="oops-features">
+          <h3>6. What are the main features of OOPs?</h3>
+          <article class="ibpage-article">
+            <p>OOPs or Object Oriented Programming mainly comprises of the below four features, and make sure you don't miss any of these:</p><ul>
+<li>Inheritance</li>
+<li>Encapsulation</li>
+<li>Polymorphism</li>
+<li>Data Abstraction<br> </li>
+</ul><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/061/original/oops-features.png?1614861561"></figure>
+          </article>
+        </section>
+        <section id="advantages-of-oops">
+          <h3>7. What are some advantages of using OOPs?</h3>
+          <article class="ibpage-article">
+            <ul>
+<li>OOPs is very helpful in solving very complex level of problems.</li>
+<li>Highly complex programs can be created, handled, and maintained easily using object-oriented programming.</li>
+<li>OOPs, promote code reuse, thereby reducing redundancy.</li>
+<li>OOPs also helps to hide the unnecessary details with the help of Data Abstraction.</li>
+<li>OOPs, are based on a bottom-up approach, unlike the Structural programming paradigm, which uses a top-down approach.</li>
+<li>Polymorphism offers a lot of flexibility in OOPs.</li>
+</ul>
+          </article>
+        </section>
+        <section id="why-oops-is-popular">
+          <h3>8. Why is OOPs so popular?</h3>
+          <article class="ibpage-article">
+            <p>OOPs programming paradigm is considered as a better style of programming. Not only it helps in writing a complex piece of code easily, but it also allows users to handle and maintain them easily as well. Not only that, the main pillar of OOPs - Data Abstraction, Encapsulation, Inheritance, and Polymorphism, makes it easy for programmers to solve complex scenarios. As a result of these, OOPs is so popular.</p>
+          </article>
+        </section>
+
+  </div>
+  <div id="advanced-oops-interview-questions">
+    <h2>Advanced OOPs Interview Questions </h2>
+
+        <section id="oops-class">
+          <h3>9. What is a class?</h3>
+          <article class="ibpage-article">
+            <p>A class can be understood as a template or a blueprint, which contains some values, known as member data or member, and some set of rules, known as behaviors or functions. So when an object is created, it automatically takes the data and functions that are defined in the class.<br>Therefore the class is basically a template or blueprint for objects. Also one can create as many objects as they want based on a class.</p><p>For example, first, a car’s template is created. Then multiple units of car are created based on that template.</p>
+          </article>
+        </section>
+        <section id="oops-object">
+          <h3>10. What is an object?</h3>
+          <article class="ibpage-article">
+            <p>An object refers to the instance of the class, which contains the instance of the members and behaviors defined in the class template. In the real world, an object is an actual entity to which a user interacts, whereas class is just the blueprint for that object. So the objects consume space and have some characteristic behavior.<br>For example, a specific car.</p>
+          </article>
+        </section>
+        <section id="oops-encapsulation">
+          <h3>11. What is encapsulation?</h3>
+          <article class="ibpage-article">
+            <figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/062/original/encapsulation.png?1614861880"></figure><p>One can visualize Encapsulation as the method of putting everything that is required to do the job, inside a capsule and presenting that capsule to the user. What it means is that by Encapsulation, all the necessary data and methods are bind together and all the unnecessary details are hidden to the normal user. So Encapsulation is the process of binding data members and methods of a program together to do a specific job, without revealing unnecessary details.<br><br>Encapsulation can also be defined in two different ways:<br><br>1) <strong>Data hiding:</strong> Encapsulation is the process of hiding unwanted information, such as restricting access to any member of an object.<br><br>2) <strong>Data binding:</strong> Encapsulation is the process of binding the data members and the methods together as a whole, as a class.</p>
+          </article>
+        </section>
+        <section id="oops-polymorphism">
+          <h3>12. What is Polymorphism?</h3>
+          <article class="ibpage-article">
+            <p>Polymorphism is composed of two words - “poly” which means “many”, and “morph” which means “shapes”. Therefore Polymorphism refers to something that has many shapes.</p><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/065/original/polymorphism.png?1614862152"></figure><p>In OOPs, Polymorphism refers to the process by which some code, data, method, or object behaves differently under different circumstances or contexts. Compile-time polymorphism and Run time polymorphism are the two types of polymorphisms in OOPs languages.</p>
+          </article>
+        </section>
+        <section id="difference-between-compile-time-and-run-time-polymorphism">
+          <h3>13. What is Compile time Polymorphism and how is it different from Runtime Polymorphism?</h3>
+          <article class="ibpage-article">
+            <figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/066/original/types_of_polymorphism.png?1614862271"></figure><p><u>Compile Time Polymorphism:</u> Compile time polymorphism, also known as Static Polymorphism, refers to the type of Polymorphism that happens at compile time. What it means is that the compiler decides what shape or value has to be taken by the entity in the picture.</p><p>Example:</p><pre><code class="language-java hljs"><span class="hljs-comment">// In this program, we will see how multiple functions are created with the same name, </span>
+<span class="hljs-comment">// but the compiler decides which function to call easily at the compile time itself.</span>
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">CompileTimePolymorphism</span></span>{
+   <span class="hljs-comment">// 1st method with name add</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y)</span></span>{ 
+   <span class="hljs-keyword">return</span> x+y;
+   }
+   <span class="hljs-comment">// 2nd method with name add</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">int</span> y, <span class="hljs-keyword">int</span> z)</span></span>{
+   <span class="hljs-keyword">return</span> x+y+z;
+   }
+   <span class="hljs-comment">// 3rd method with name add</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">double</span> x, <span class="hljs-keyword">int</span> y)</span></span>{ 
+   <span class="hljs-keyword">return</span> (<span class="hljs-keyword">int</span>)x+y;
+   }
+   <span class="hljs-comment">// 4th method with name add</span>
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">int</span> <span class="hljs-title">add</span><span class="hljs-params">(<span class="hljs-keyword">int</span> x, <span class="hljs-keyword">double</span> y)</span></span>{ 
+   <span class="hljs-keyword">return</span> x+(<span class="hljs-keyword">int</span>)y;
+   }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+   CompileTimePolymorphism demo=<span class="hljs-keyword">new</span> CompileTimePolymorphism();
+   <span class="hljs-comment">// In the below statement, the Compiler looks at the argument types and decides to call method 1</span>
+   System.out.println(demo.add(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>));
+   <span class="hljs-comment">// Similarly, in the below statement, the compiler calls method 2</span>
+   System.out.println(demo.add(<span class="hljs-number">2</span>,<span class="hljs-number">3</span>,<span class="hljs-number">4</span>));
+   <span class="hljs-comment">// Similarly, in the below statement, the compiler calls method 3</span>
+   System.out.println(demo.add(<span class="hljs-number">2</span>,<span class="hljs-number">3.4</span>));
+   <span class="hljs-comment">// Similarly, in the below statement, the compiler calls method 4</span>
+   System.out.println(demo.add(<span class="hljs-number">2.5</span>,<span class="hljs-number">3</span>)); 
+   }
+}</code></pre><p>In the above example, there are four versions of add methods. The first method takes two parameters while the second one takes three. For the third and fourth methods, there is a change of order of parameters. The compiler looks at the method signature and decides which method to invoke for a particular method call at compile time.<br><br><u>Runtime Polymorphism:</u> Runtime polymorphism, also known as Dynamic Polymorphism, refers to the type of Polymorphism that happens at the run time. What it means is it can't be decided by the compiler. Therefore what shape or value has to be taken depends upon the execution. Hence the name Runtime Polymorphism.</p><p>Example:</p><pre><code class="language-java hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">AnyVehicle</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">()</span></span>{
+   System.out.println(“Any vehicle should move!!”);
+   }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Bike</span> <span class="hljs-keyword">extends</span> <span class="hljs-title">AnyVehicle</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">void</span> <span class="hljs-title">move</span><span class="hljs-params">()</span></span>{
+   System.out.println(“Bike can move too!!”);
+   }
+}
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Test</span></span>{
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span></span>{
+   AnyVehicle vehicle = <span class="hljs-keyword">new</span> Bike();
+   <span class="hljs-comment">// In the above statement, as you can see, the object vehicle is of type AnyVehicle</span>
+   <span class="hljs-comment">// But the output of the below statement will be “Bike can move too!!”, </span>
+   <span class="hljs-comment">// because the actual implementation of object ‘vehicle’ is decided during runtime vehicle.move();</span>
+   vehicle = <span class="hljs-keyword">new</span> AnyVehicle();
+   <span class="hljs-comment">// Now, the output of the below statement will be “Any vehicle should move!!”, </span>
+   vehicle.move();
+   }
+}</code></pre><p>As the method to call is determined at runtime, as shown in the above code, this is called runtime polymorphism. </p>
+          </article>
+        </section>
+        <section id="polymorphism-in-c">
+          <h3>14. How does C++ support Polymorphism?</h3>
+          <article class="ibpage-article">
+            <p>C++ is an Object-oriented programming language and it supports Polymorphism as well:</p><ul>
+<li>
+<u>Compile Time Polymorphism</u>: C++ supports compile-time polymorphism with the help of features like templates, function overloading, and default arguments.</li>
+<li>
+<u>Runtime Polymorphism:</u> C++ supports Runtime polymorphism with the help of features like virtual functions. Virtual functions take the shape of the functions based on the type of object in reference and are resolved at runtime.</li>
+</ul>
+          </article>
+        </section>
+        <section id="oops-inheritance">
+          <h3>15. What is meant by Inheritance?</h3>
+          <article class="ibpage-article">
+            <p>The term “inheritance” means “receiving some quality or behavior from a parent to an offspring.” In object-oriented programming, inheritance is the mechanism by which an object or class (referred to as a child) is created using the definition of another object or class (referred to as a parent). Inheritance not only helps to keep the implementation simpler but also helps to facilitate code reuse.</p>
+          </article>
+        </section>
+        <section id="oops-abstraction">
+          <h3>16. What is Abstraction?</h3>
+          <article class="ibpage-article">
+            <p>If you are a user, and you have a problem statement, you don't want to know how the components of the software work, or how it's made. You only want to know how the software solves your problem. Abstraction is the method of hiding unnecessary details from the necessary ones. It is one of the main features of OOPs. <br>For example, consider a car. You only need to know how to run a car, and not how the wires are connected inside it. This is obtained using Abstraction.</p>
+          </article>
+        </section>
+        <section id="class-memory-allocation">
+          <h3>17.  How much memory does a class occupy?</h3>
+          <article class="ibpage-article">
+            <p>Classes do not consume any memory. They are just a blueprint based on which objects are created. Now when objects are created, they actually initialize the class members and methods and therefore consume memory.</p>
+          </article>
+        </section>
+        <section id="necessary-to-create-objects-from-class">
+          <h3>18. Is it always necessary to create objects from class?</h3>
+          <article class="ibpage-article">
+            <p>No. An object is necessary to be created if the base class has non-static methods. But if the class has static methods, then objects don’t need to be created. You can call the class method directly in this case, using the class name.</p>
+          </article>
+        </section>
+        <section id="oops-constructor">
+          <h3>19. What is a constructor?</h3>
+          <article class="ibpage-article">
+            <p>Constructors are special methods whose name is the same as the class name. The constructors serve the special purpose of initializing the objects.<br>For example, suppose there is a class with the name “MyClass”, then when you instantiate this class, you pass the syntax:<br><code>MyClass myClassObject = new MyClass();</code></p><p>Now here, the method called after “new” keyword - MyClass(), is the constructor of this class. This will help to instantiate the member data and methods and assign them to the object myClassObject.</p><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/067/original/constructor.png?1614862478"></figure>
+          </article>
+        </section>
+        <section id="constructors-c">
+          <h3>20. What are the various types of constructors in C++?</h3>
+          <article class="ibpage-article">
+            <p>The most common classification of constructors includes:</p><p><u>Default constructor:</u> The default constructor is the constructor which doesn’t take any argument. It has no parameters.</p><pre><code class="language-cpp hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ABC</span>
+{</span>
+   <span class="hljs-keyword">int</span> x;
+      
+   ABC()
+   {
+       x = <span class="hljs-number">0</span>;
+   }
+}</code></pre><p><u>Parameterized constructor:</u> The constructors that take some arguments are known as parameterized constructors.</p><pre><code class="language-cpp hljs"> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ABC</span>
+{</span>
+   <span class="hljs-keyword">int</span> x;
+      
+   ABC(<span class="hljs-keyword">int</span> y)
+   {
+       x = y;
+   }
+}</code></pre><p><u>Copy constructor:</u> A copy constructor is a member function that initializes an object using another object of the same class.</p><pre><code class="language-cpp hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ABC</span>
+{</span>
+   <span class="hljs-keyword">int</span> x;
+      
+   ABC(<span class="hljs-keyword">int</span> y)
+   {
+       x = y;
+   }
+   <span class="hljs-comment">// Copy constructor</span>
+   ABC(ABC abc)
+   {
+       x = abc.x;
+   }
+}</code></pre>
+          </article>
+        </section>
+        <section id="copy-constructor">
+          <h3>21. What is a copy constructor?</h3>
+          <article class="ibpage-article">
+            <p>Copy Constructor is a type of constructor, whose purpose is to copy an object to another. What it means is that a copy constructor will clone an object and its values, into another object, is provided that both the objects are of the same class.</p>
+          </article>
+        </section>
+        <section id="destructors">
+          <h3>22. What is a destructor?</h3>
+          <article class="ibpage-article">
+            <p>Contrary to constructors, which initialize objects and specify space for them, Destructors are also special methods. But destructors free up the resources and memory occupied by an object. Destructors are automatically called when an object is being destroyed. </p>
+          </article>
+        </section>
+        <section id="difference-between-class-and-structure">
+          <h3>23. Are class and structure the same? If not, what&#39;s the difference between a class and a structure?</h3>
+          <article class="ibpage-article">
+            <p>No, class and structure are not the same. Though they appear to be similar, they have differences that make them apart. For example, the structure is saved in the stack memory, whereas the class is saved in the heap memory. Also, Data Abstraction cannot be achieved with the help of structure, but with class, Abstraction is majorly used.</p>
+          </article>
+        </section>
+        <section id="inheritance-example">
+          <h3>24. Explain Inheritance with an example?</h3>
+          <article class="ibpage-article">
+            <p>Inheritance is one of the major features of object-oriented programming, by which an entity inherits some characteristics and behaviors of some other entity and makes them their own. Inheritance helps to improve and facilitate code reuse.</p><p>Let me explain to you with a common example. Let's take three different vehicles - a car, truck, or bus. These three are entirely different from one another with their own specific characteristics and behavior. But. in all three, you will find some common elements, like steering wheel, accelerator, clutch, brakes, etc. Though these elements are used in different vehicles, still they have their own features which are common among all vehicles. This is achieved with inheritance. The car, the truck, and the bus have all inherited the features like steering wheel, accelerator, clutch, brakes, etc, and used them as their own. Due to this, they did not have to create these components from scratch, thereby facilitating code reuse.</p><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/068/original/inheritance-with-ex.png?1614862598"></figure>
+          </article>
+        </section>
+        <section id="inheritance-limitations">
+          <h3>25.  Are there any limitations of Inheritance?</h3>
+          <article class="ibpage-article">
+            <p>Yes, with more powers comes more complications. Inheritance is a very powerful feature in OOPs, but it has some limitations too. Inheritance needs more time to process, as it needs to navigate through multiple classes for its implementation. Also, the classes involved in Inheritance - the base class and the child class, are very tightly coupled together. So if one needs to make some changes, they might need to do nested changes in both classes. Inheritance might be complex for implementation, as well. So if not correctly implemented, this might lead to unexpected errors or incorrect outputs.</p>
+          </article>
+        </section>
+        <section id="types-of-inheritance">
+          <h3>26. What are the various types of inheritance?</h3>
+          <article class="ibpage-article">
+            <p>The various types of inheritance include:</p><ul>
+<li>Single inheritance</li>
+<li>Multiple inheritances</li>
+<li>Multi-level inheritance</li>
+<li>Hierarchical inheritance</li>
+<li>Hybrid inheritance</li>
+</ul><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/069/original/types_of_inheritance.png?1614862699"></figure>
+          </article>
+        </section>
+        <section id="subclass">
+          <h3>27. What is a subclass?</h3>
+          <article class="ibpage-article">
+            <p>The subclass is a part of Inheritance. The subclass is an entity, which inherits from another class. It is also known as the child class.</p>
+          </article>
+        </section>
+        <section id="superclass">
+          <h3>28. Define a superclass?</h3>
+          <article class="ibpage-article">
+            <p>Superclass is also a part of Inheritance. The superclass is an entity, which allows subclasses or child classes to inherit from itself.</p><figure class="image image_resized" style="width:75%;"><img src="https://s3.ap-south-1.amazonaws.com/myinterviewtrainer-domestic/public_assets/assets/000/000/070/original/superclass.png?1614862766"></figure>
+          </article>
+        </section>
+        <section id="interface">
+          <h3>29. What is an interface?</h3>
+          <article class="ibpage-article">
+            <p>An interface refers to a special type of class, which contains methods, but not their definition. Only the declaration of methods is allowed inside an interface. To use an interface, you cannot create objects. Instead, you need to implement that interface and define the methods for their implementation. </p>
+          </article>
+        </section>
+        <section id="static-polymorphism">
+          <h3>30. What is meant by static polymorphism?</h3>
+          <article class="ibpage-article">
+            <p>Static Polymorphism is commonly known as the Compile time polymorphism. Static polymorphism is the feature by which an object is linked with the respective function or operator based on the values during the compile time. Static or Compile time Polymorphism can be achieved through Method overloading or operator overloading.</p>
+          </article>
+        </section>
+        <section id="dynamic-polymorphism">
+          <h3>31. What is meant by dynamic polymorphism?</h3>
+          <article class="ibpage-article">
+            <p>Dynamic Polymorphism or Runtime polymorphism refers to the type of Polymorphism in OOPs, by which the actual implementation of the function is decided during the runtime or execution. The dynamic or runtime polymorphism can be achieved with the help of method overriding.</p>
+          </article>
+        </section>
+        <section id="overloading-vs-overriding">
+          <h3>32. What is the difference between overloading and overriding?</h3>
+          <article class="ibpage-article">
+            <p>Overloading is a compile-time polymorphism feature in which an entity has multiple implementations with the same name. For example, Method overloading and Operator overloading.</p><p>Whereas Overriding is a runtime polymorphism feature in which an entity has the same name, but its implementation changes during execution. For example, Method overriding.<br><strong>Image</strong></p>
+          </article>
+        </section>
+        <section id="data-abstraction-accomplished">
+          <h3>33. How is data abstraction accomplished?</h3>
+          <article class="ibpage-article">
+            <p>Data abstraction is accomplished with the help of abstract methods or abstract classes.</p>
+          </article>
+        </section>
+        <section id="abstract-class">
+          <h3>34. What is an abstract class?</h3>
+          <article class="ibpage-article">
+            <p>An abstract class is a special class containing abstract methods. The significance of abstract class is that the abstract methods inside it are not implemented and only declared. So as a result, when a subclass inherits the abstract class and needs to use its abstract methods, they need to define and implement them.</p>
+          </article>
+        </section>
+        <section id="abstract-class-vs-interface">
+          <h3>35. How is an abstract class different from an interface?</h3>
+          <article class="ibpage-article">
+            <p>Interface and abstract class both are special types of classes that contain only the methods declaration and not their implementation. But the interface is entirely different from an abstract class. The main difference between the two is that, when an interface is implemented, the subclass must define all its methods and provide its implementation. Whereas when an abstract class is inherited, the subclass does not need to provide the definition of its abstract method, until and unless the subclass is using it.</p><p>Also, an abstract class can contain abstract methods as well as non-abstract methods.</p>
+          </article>
+        </section>
+        <section id="oops-access-specifiers">
+          <h3>36. What are access specifiers and what is their significance?</h3>
+          <article class="ibpage-article">
+            <p>Access specifiers, as the name suggests, are a special type of keywords, which are used to control or specify the accessibility of entities like classes, methods, etc. Some of the access specifiers or access modifiers include “private”, “public”, etc. These access specifiers also play a very vital role in achieving Encapsulation - one of the major features of OOPs.</p>
+          </article>
+        </section>
+        <section id="exception">
+          <h3>37. What is an exception?</h3>
+          <article class="ibpage-article">
+            <p>An exception can be considered as a special event, which is raised during the execution of a program at runtime, that brings the execution to a halt. The reason for the exception is mainly due to a position in the program, where the user wants to do something for which the program is not specified, like undesirable input.</p>
+          </article>
+        </section>
+        <section id="exception-handling">
+          <h3>38. What is meant by exception handling?</h3>
+          <article class="ibpage-article">
+            <p>No one wants its software to fail or crash. Exceptions are the major reason for software failure. The exceptions can be handled in the program beforehand and prevent the execution from stopping. This is known as exception handling.<br>So exception handling is the mechanism for identifying the undesirable states that the program can reach and specifying the desirable outcomes of such states.<br>Try-catch is the most common method used for handling exceptions in the program.</p>
+          </article>
+        </section>
+        <section id="garbage-collection-in-oops">
+          <h3>39. What is meant by Garbage Collection in OOPs world?</h3>
+          <article class="ibpage-article">
+            <p>Object-oriented programming revolves around entities like objects. Each object consumes memory and there can be multiple objects of a class. So if these objects and their memories are not handled properly, then it might lead to certain memory-related errors and the system might fail.</p><p>Garbage collection refers to this mechanism of handling the memory in the program. Through garbage collection, the unwanted memory is freed up by removing the objects that are no longer needed.</p>
+          </article>
+        </section>
+        <section id="run-java-application-without-oops">
+          <h3>40. Can we run a Java application without implementing the OOPs concept?</h3>
+          <article class="ibpage-article">
+            <p>No. Java applications are based on Object-oriented programming models or OOPs concept, and hence they cannot be implemented without it.</p><p>However, on the other hand, C++ can be implemented without OOPs, as it also supports the C-like structural programming model.</p>
+          </article>
+        </section>
+
+  </div>
+  <div id="oops-coding-problems">
+    <h2>OOPs Coding Problems</h2>
+
+        <section id="code-output">
+          <h3>41. What is the output of the below code?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt; </span></span>
+ 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>; 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseClass1</span> {</span> 
+<span class="hljs-keyword">public</span>: 
+    BaseClass1() 
+    { <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">" BaseClass1 constructor called"</span> &lt;&lt; <span class="hljs-built_in">endl</span>;  } 
+}; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseClass2</span> {</span> 
+<span class="hljs-keyword">public</span>: 
+    BaseClass2() 
+    { <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"BaseClass2 constructor called"</span> &lt;&lt; <span class="hljs-built_in">endl</span>;  } 
+}; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DerivedClass</span>:</span> <span class="hljs-keyword">public</span> BaseClass1, <span class="hljs-keyword">public</span> BaseClass2 { 
+  <span class="hljs-keyword">public</span>: 
+   DerivedClass() 
+    {  <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"DerivedClass constructor called"</span> &lt;&lt; <span class="hljs-built_in">endl</span>;  } 
+}; 
+ 
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> 
+</span>{ 
+  DerivedClass derived_class; 
+  <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre><p><strong>Output:</strong></p><pre><code class="language-cpp hljs">BaseClass1 constructor called
+BaseClass2 constructor called
+DerivedClass constructor called</code></pre><p><strong>Reason:</strong><br>The above program demonstrates Multiple inheritances. So when the Derived class’s constructor is called, it automatically calls the Base class's constructors from left to right order of inheritance.</p>
+          </article>
+        </section>
+        <section id="find-the-code-output">
+          <h3>42. What will be the output of the below code?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-java hljs"><span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Scaler</span>
+</span>{
+   <span class="hljs-keyword">static</span> <span class="hljs-keyword">int</span> i;
+
+   <span class="hljs-keyword">static</span>
+   {
+       System.out.println(“a”);
+
+       i = <span class="hljs-number">100</span>;
+   }
+}
+
+<span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">StaticBlock</span>
+</span>{
+   <span class="hljs-keyword">static</span>
+   {
+       System.out.println(“b”);
+   }
+
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] args)</span>
+   </span>{
+       System.out.println(“c”);
+
+       System.out.println(Scaler.i);
+   }
+}</code></pre><p><strong>Output:</strong></p><pre><code class="language-java hljs">b
+c
+a
+<span class="hljs-number">100</span></code></pre><p><strong>Reason:</strong><br>Firstly the static block inside the main-method calling class will be implemented. Hence ‘b’ will be printed first. Then the main method is called, and now the sequence is kept as expected.</p>
+          </article>
+        </section>
+        <section id="predict-output">
+          <h3>43. Predict the output?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt; </span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>; 
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassA</span> {</span>  
+<span class="hljs-keyword">public</span>: 
+   ClassA(<span class="hljs-keyword">int</span> ii = <span class="hljs-number">0</span>) : i(ii) {} 
+   <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">show</span><span class="hljs-params">()</span> </span>{ <span class="hljs-built_in">cout</span> &lt;&lt; <span class="hljs-string">"i = "</span> &lt;&lt; i &lt;&lt; <span class="hljs-built_in">endl</span>;} 
+<span class="hljs-keyword">private</span>: 
+   <span class="hljs-keyword">int</span> i; 
+}; 
+
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">ClassB</span> {</span> 
+<span class="hljs-keyword">public</span>: 
+   ClassB(<span class="hljs-keyword">int</span> xx) : x(xx) {} 
+   <span class="hljs-function"><span class="hljs-keyword">operator</span> <span class="hljs-title">ClassA</span><span class="hljs-params">()</span> <span class="hljs-keyword">const</span> </span>{ <span class="hljs-keyword">return</span> ClassA(x); } 
+<span class="hljs-keyword">private</span>: 
+   <span class="hljs-keyword">int</span> x; 
+}; 
+
+<span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">g</span><span class="hljs-params">(ClassA a)</span> 
+</span>{  a.show(); } 
+
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">()</span> </span>{ 
+ <span class="hljs-function">ClassB <span class="hljs-title">b</span><span class="hljs-params">(<span class="hljs-number">10</span>)</span></span>; 
+ g(b); 
+ g(<span class="hljs-number">20</span>); 
+ getchar(); 
+ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}  </code></pre><p><strong>Output:</strong></p><pre><code class="language-cpp hljs">i = <span class="hljs-number">10</span>
+i = <span class="hljs-number">20</span></code></pre><p><strong>Reason:</strong><br>ClassA contains a conversion constructor. Due to this, the objects of ClassA can have integer values. So the statement g(20) works. Also, ClassB has a conversion operator overloaded. So the statement g(b) also works.</p>
+          </article>
+        </section>
+        <section id="below-code-output">
+          <h3>44. What will be the output in below code?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-java hljs"><span class="hljs-keyword">public</span> <span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">Demo</span></span>{ 
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String[] arr)</span></span>{ 
+         System.out.println(“Main1”);
+   } 
+   <span class="hljs-function"><span class="hljs-keyword">public</span> <span class="hljs-keyword">static</span> <span class="hljs-keyword">void</span> <span class="hljs-title">main</span><span class="hljs-params">(String arr)</span></span>{  
+         System.out.println(“Main2”);
+   } 
+}</code></pre><p><strong>Output:</strong></p><pre><code class="language-java hljs">Main1</code></pre><p><strong>Reason:</strong><br>Here the main() method is overloaded. But JVM only understands the main method which has a String[] argument in its definition. Hence Main1 is printed and the overloaded main method is ignored. </p>
+          </article>
+        </section>
+        <section id="what-is-the-output">
+          <h3>45. Predict the output?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt; </span></span>
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">BaseClass</span>{</span> 
+   <span class="hljs-keyword">int</span> arr[<span class="hljs-number">10</span>];      
+}; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DerivedBaseClass1</span>:</span> <span class="hljs-keyword">public</span> BaseClass { }; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DerivedBaseClass2</span>:</span> <span class="hljs-keyword">public</span> BaseClass { }; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">DerivedClass</span>:</span> <span class="hljs-keyword">public</span> DerivedBaseClass1, <span class="hljs-keyword">public</span> DerivedBaseClass2{}; 
+ 
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> 
+</span>{  
+ <span class="hljs-built_in">cout</span>&lt;&lt;<span class="hljs-keyword">sizeof</span>(DerivedClass);
+ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre><p><strong>Output:</strong></p><pre><code class="language-cpp hljs">If the size of the integer is <span class="hljs-number">4</span> bytes, then the output will be <span class="hljs-number">80.</span></code></pre><p><strong>Reason: </strong><br>Since DerivedBaseClass1 and DerivedBaseClass1 both inherit from class BaseClass, DerivedClass contains two copies of BaseClass. Hence it results in wastage of space and a large size output. It can be reduced with the help of a virtual base class.</p>
+          </article>
+        </section>
+        <section id="program-output">
+          <h3>46. What is the output of the below program?</h3>
+          <article class="ibpage-article">
+            <pre><code class="language-cpp hljs"><span class="hljs-meta">#<span class="hljs-meta-keyword">include</span><span class="hljs-meta-string">&lt;iostream&gt; </span></span>
+ 
+<span class="hljs-keyword">using</span> <span class="hljs-keyword">namespace</span> <span class="hljs-built_in">std</span>; 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">A</span> {</span> 
+<span class="hljs-keyword">public</span>: 
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> 
+  </span>{ <span class="hljs-built_in">cout</span> &lt;&lt;<span class="hljs-string">" Inside A::"</span>; } 
+}; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">B</span> :</span> <span class="hljs-keyword">public</span> A { 
+<span class="hljs-keyword">public</span>: 
+  <span class="hljs-function"><span class="hljs-keyword">void</span> <span class="hljs-title">print</span><span class="hljs-params">()</span> 
+  </span>{ <span class="hljs-built_in">cout</span> &lt;&lt;<span class="hljs-string">" Inside B"</span>; } 
+}; 
+ 
+<span class="hljs-class"><span class="hljs-keyword">class</span> <span class="hljs-title">C</span>:</span> <span class="hljs-keyword">public</span> B { 
+}; 
+ 
+<span class="hljs-function"><span class="hljs-keyword">int</span> <span class="hljs-title">main</span><span class="hljs-params">(<span class="hljs-keyword">void</span>)</span> 
+</span>{ 
+ C c; 
+ 
+ c.print(); 
+ <span class="hljs-keyword">return</span> <span class="hljs-number">0</span>; 
+}</code></pre><p><strong>Output:</strong></p><pre><code class="language-cpp hljs">Inside B</code></pre><p><strong>Reason:</strong><br>The above program implements a Multi-level hierarchy. So the program is linearly searched up until a matching function is found. Here, it is present in both classes A and B. So class B’s print() method is called. </p>
+          </article>
+        </section>
+
+  </div>
+
+        </section>
+        <!-- Artilce Block END -->
+
+        <!-- Problem Block START -->
+        <section class="ibpage-problems" id="oops-interview-mcqs">
+          <h2>Oops interview MCQs</h2>
+
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">1.</span>
+      <div>
+        <p> _______ was the first language to be developed as a purely object-oriented programming language?<br> </p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12986" id="p_12986_a_Smalltalk" value="">
+        <label class="form-check__label" for="p_12986_a_Smalltalk">
+          Smalltalk
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12986" id="p_12986_a_C++" value="">
+        <label class="form-check__label" for="p_12986_a_C++">
+          C++
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12986" id="p_12986_a_PHP" value="">
+        <label class="form-check__label" for="p_12986_a_PHP">
+          PHP
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12986" id="p_12986_a_Java" value="">
+        <label class="form-check__label" for="p_12986_a_Java">
+          Java
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">2.</span>
+      <div>
+        <p>Who developed the first object-oriented programming language?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12987" id="p_12987_a_Adele Goldberg" value="">
+        <label class="form-check__label" for="p_12987_a_Adele Goldberg">
+          Adele Goldberg
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12987" id="p_12987_a_Dennis Ritchie" value="">
+        <label class="form-check__label" for="p_12987_a_Dennis Ritchie">
+          Dennis Ritchie
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12987" id="p_12987_a_Alan Kay" value="">
+        <label class="form-check__label" for="p_12987_a_Alan Kay">
+          Alan Kay
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12987" id="p_12987_a_Andrea Ferro" value="">
+        <label class="form-check__label" for="p_12987_a_Andrea Ferro">
+          Andrea Ferro
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">3.</span>
+      <div>
+        <p>Which of the following is not a main feature of OOPs?<br> </p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12988" id="p_12988_a_Encapsulation" value="">
+        <label class="form-check__label" for="p_12988_a_Encapsulation">
+          Encapsulation
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12988" id="p_12988_a_Polymorphism" value="">
+        <label class="form-check__label" for="p_12988_a_Polymorphism">
+          Polymorphism
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12988" id="p_12988_a_Exception" value="">
+        <label class="form-check__label" for="p_12988_a_Exception">
+          Exception
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12988" id="p_12988_a_Abstraction" value="">
+        <label class="form-check__label" for="p_12988_a_Abstraction">
+          Abstraction
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">4.</span>
+      <div>
+        <p>Which feature of OOPs facilitates code reusability?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12989" id="p_12989_a_" value="">
+        <label class="form-check__label" for="p_12989_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12989" id="p_12989_a_" value="">
+        <label class="form-check__label" for="p_12989_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12989" id="p_12989_a_" value="">
+        <label class="form-check__label" for="p_12989_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12989" id="p_12989_a_" value="">
+        <label class="form-check__label" for="p_12989_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">5.</span>
+      <div>
+        <p>Which language among the following supports classes, but does not support the concept of Polymorphism?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12990" id="p_12990_a_C++ programming language" value="">
+        <label class="form-check__label" for="p_12990_a_C++ programming language">
+          C++ programming language
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12990" id="p_12990_a_Java programming language" value="">
+        <label class="form-check__label" for="p_12990_a_Java programming language">
+          Java programming language
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12990" id="p_12990_a_Ada programming language" value="">
+        <label class="form-check__label" for="p_12990_a_Ada programming language">
+          Ada programming language
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12990" id="p_12990_a_C# programming language" value="">
+        <label class="form-check__label" for="p_12990_a_C# programming language">
+          C# programming language
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">6.</span>
+      <div>
+        <p>What feature among the following is not right for OOPs?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12991" id="p_12991_a_" value="">
+        <label class="form-check__label" for="p_12991_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12991" id="p_12991_a_" value="">
+        <label class="form-check__label" for="p_12991_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12991" id="p_12991_a_" value="">
+        <label class="form-check__label" for="p_12991_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12991" id="p_12991_a_" value="">
+        <label class="form-check__label" for="p_12991_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">7.</span>
+      <div>
+        <p>_______ is the feature of the Object-oriented programming model which allows one class to derive features from another class?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12992" id="p_12992_a_Inheritance" value="">
+        <label class="form-check__label" for="p_12992_a_Inheritance">
+          Inheritance
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12992" id="p_12992_a_Data hiding" value="">
+        <label class="form-check__label" for="p_12992_a_Data hiding">
+          Data hiding
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12992" id="p_12992_a_Encapsulation" value="">
+        <label class="form-check__label" for="p_12992_a_Encapsulation">
+          Encapsulation
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12992" id="p_12992_a_Polymorphism" value="">
+        <label class="form-check__label" for="p_12992_a_Polymorphism">
+          Polymorphism
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">8.</span>
+      <div>
+        <p>________ is an object-oriented programming language but does not support all inheritance types.</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12993" id="p_12993_a_Smalltalk" value="">
+        <label class="form-check__label" for="p_12993_a_Smalltalk">
+          Smalltalk
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12993" id="p_12993_a_Kotlin" value="">
+        <label class="form-check__label" for="p_12993_a_Kotlin">
+          Kotlin
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12993" id="p_12993_a_Java" value="">
+        <label class="form-check__label" for="p_12993_a_Java">
+          Java
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12993" id="p_12993_a_C++" value="">
+        <label class="form-check__label" for="p_12993_a_C++">
+          C++
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">9.</span>
+      <div>
+        <p>Which among the following operators can be used to show Polymorphism in CPP?<br> </p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12994" id="p_12994_a_" value="">
+        <label class="form-check__label" for="p_12994_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12994" id="p_12994_a_" value="">
+        <label class="form-check__label" for="p_12994_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12994" id="p_12994_a_" value="">
+        <label class="form-check__label" for="p_12994_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12994" id="p_12994_a_" value="">
+        <label class="form-check__label" for="p_12994_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">10.</span>
+      <div>
+        <p>Which among the following does not show or cannot be used, to show Polymorphism?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12995" id="p_12995_a_" value="">
+        <label class="form-check__label" for="p_12995_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12995" id="p_12995_a_" value="">
+        <label class="form-check__label" for="p_12995_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12995" id="p_12995_a_" value="">
+        <label class="form-check__label" for="p_12995_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12995" id="p_12995_a_" value="">
+        <label class="form-check__label" for="p_12995_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">11.</span>
+      <div>
+        <p>Which among the following functions represent the concept of Polymorphism?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12996" id="p_12996_a_Class member function" value="">
+        <label class="form-check__label" for="p_12996_a_Class member function">
+          Class member function
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12996" id="p_12996_a_Virtual function" value="">
+        <label class="form-check__label" for="p_12996_a_Virtual function">
+          Virtual function
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12996" id="p_12996_a_Inline function" value="">
+        <label class="form-check__label" for="p_12996_a_Inline function">
+          Inline function
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12996" id="p_12996_a_Undefined function" value="">
+        <label class="form-check__label" for="p_12996_a_Undefined function">
+          Undefined function
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">12.</span>
+      <div>
+        <p>Can you use C language to demonstrate Polymorphism?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_12997" id="p_12997_a_True" value="">
+        <label class="form-check__label" for="p_12997_a_True">
+          True
+        </label>
+      </div>
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_12997" id="p_12997_a_False" value="">
+        <label class="form-check__label" for="p_12997_a_False">
+          False
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">13.</span>
+      <div>
+        <p>_______ is the feature of OOPs which is responsible for binding data with their implementation as a single entity?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12998" id="p_12998_a_" value="">
+        <label class="form-check__label" for="p_12998_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12998" id="p_12998_a_" value="">
+        <label class="form-check__label" for="p_12998_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12998" id="p_12998_a_" value="">
+        <label class="form-check__label" for="p_12998_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12998" id="p_12998_a_" value="">
+        <label class="form-check__label" for="p_12998_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">14.</span>
+      <div>
+        <p>Which superclass member won’t be accessible to the subclass?</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12999" id="p_12999_a_" value="">
+        <label class="form-check__label" for="p_12999_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12999" id="p_12999_a_" value="">
+        <label class="form-check__label" for="p_12999_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12999" id="p_12999_a_" value="">
+        <label class="form-check__label" for="p_12999_a_">
+          
+        </label>
+      </div>
+      <div class="form-check" data-correct="">
+        <input class="form-check__input" type="radio" name="p_12999" id="p_12999_a_" value="">
+        <label class="form-check__label" for="p_12999_a_">
+          
+        </label>
+      </div>
+    </div>
+
+  </section>
+  <section class="ibpage-problems__item">
+    <div class="ibpage-problems__header">
+      <span class="m-r-5">15.</span>
+      <div>
+        <p>State true or false: A Java application can be created without implementing the OOPs concept.</p>
+      </div>
+    </div>
+
+    <div class="ibpage-problems__options">
+      <div class="form-check" data-correct="false">
+        <input class="form-check__input" type="radio" name="p_13000" id="p_13000_a_True" value="">
+        <label class="form-check__label" for="p_13000_a_True">
+          True
+        </label>
+      </div>
+      <div class="form-check" data-correct="true">
+        <input class="form-check__input" type="radio" name="p_13000" id="p_13000_a_False" value="">
+        <label class="form-check__label" for="p_13000_a_False">
+          False
+        </label>
+      </div>
+    </div>
+
+  </section>
+
+
+        </section>
+        <!-- Problem Block END -->
+      </section>
+    </div>
+  </article>
+
+  
+<div
+  class="modal-nudge bottom-left modal-nudge--free_academy"
+  id="nudge_modal"
+  onmouseenter="trackGaEvent('free_academy', 'side_pop_up', 'hover')"
+>
+  <div class="modal-nudge__dialog ">
+    <button type="button" id="nudge_button" class="modal-nudge__close">
+      &times;
+    </button>
+    
+     
+
+    <div class="modal-nudge__body">
+      <div class="modal-nudge__content">
+        <div class="modal-nudge__images">
+         
+            
+        
+            <img class="modal-nudge__image3" src="https://assets.interviewbit.com/assets/interviewbit/png/free_academy-e301973a18534dec20bf1f602490295f7343376eeac7e841aa500171594b0f46.png.gz" alt="Free academy e301973a18534dec20bf1f602490295f7343376eeac7e841aa500171594b0f46.png" />
+            
+        </div>
+        <div class="modal-nudge__text">
+          <h4> Preparing for tech <br/> interviews? </h4>
+            <p><p>Learn from the best <br/>instructors in the field.</p><p>Try Academy for<span class="highlight"> FREE</span></p></p>
+        </div>
+        <div class="modal-nudge__button">
+          <a
+            href="https://scaler.com/academy?utm_source=ib&amp;utm_campaign=free_academy&amp;utm_medium=nudge_modal&amp;utm_content=/oops-interview-questions"
+            target="_blank"
+            class="es-event-tracker btn modal-nudge__button"
+            data-name="nudge-modal-free_academy"
+            onclick="trackGaEvent('free_academy', 'redirect', 'side_pop_up')"
+          >
+            Register Now
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<script type="text/javascript">
+  window.addEventListener("load", function () {
+    setTimeout(function () {
+      window.trackGaEvent('free_academy', 'pop_up_shown', 'side_pop_up');
+      document.getElementById("nudge_modal").style.display = "block";
+    }, 15000);
+  });
+
+  document.getElementById("nudge_button").onclick = function () {
+    window.trackGaEvent('free_academy', 'pop_up_closed', 'side_pop_up');
+    document.getElementById("nudge_modal").style.display = "none";
+  };
+</script>
+
+
+  
+<section id="footer" class="section">
+  <div class="container">
+    <div class="row text-center" id="footer-pages">
+      <ul class="list-inline">
+        <li><a href="https://www.interviewbit.com/blog/" target="_blank">Blog</a></li>
+        <li><a href="/pages/about_us/">About Us</a></li>
+        <li><a href="/pages/faq/">FAQ</a></li>
+        <li><a href="/pages/contact_us/">Contact Us</a></li>
+        <li><a href="/pages/terms/">Terms</a></li>
+        <li><a href="/pages/privacy/">Privacy Policy</a></li>
+      </ul>
+    </div>
+    <div class="row text-center" id="footer-pages">
+      <ul class="list-inline">
+        <li><a href="/scaler-academy-review">Scaler Academy Review</a></li>
+        <li><a href="/courses/system-design/">System Design Interview Questions</a></li>
+        <li><a href="/google-interview-questions/">Google Interview Questions</a></li>
+        <li><a href="/facebook-interview-questions/">Facebook Interview Questions</a></li>
+        <li><a href="/amazon-interview-questions/">Amazon Interview Questions</a></li>
+        <li><a href="/microsoft-interview-questions/">Microsoft Interview Questions</a></li>
+        <li><a href="/sql-interview-questions/">SQL Interview Questions</a></li>
+        <li><a href="/python-interview-questions/">Python Interview Questions</a></li>
+        <li><a href="/javascript-interview-questions/">Javascript Interview Questions</a></li>
+        <li><a href="/mvc-interview-questions/">MVC Interview Questions</a></li>
+        <li><a href="/react-interview-questions/">React Interview Questions</a></li>
+        <li><a href="/jquery-interview-questions/">jQuery Interview Questions</a></li>
+        <li><a href="/angular-interview-questions/">Angular Interview Questions</a></li>
+        <li><a href="/spring-interview-questions/">Spring Interview Questions</a></li>
+        <li><a href="/data-structure-interview-questions/">Data Structure Interview Questions</a></li>
+        <li><a href="/selenium-interview-questions/">Selenium Interview Questions</a></li>
+        <li><a href="/directi-interview-questions/">Directi Interview Questions</a></li>
+        <li><a href="/yahoo-interview-questions/">Yahoo Interview Questions</a></li>
+        <li><a href="/linkedin-interview-questions/">LinkedIn Interview Questions</a></li>
+        <li><a href="/vmware-interview-questions/">VMware Interview Questions</a></li>
+        <li><a href="/ebay-interview-questions/">eBay Interview Questions</a></li>
+        <li><a href="/flipkart-interview-questions/">Flipkart Interview Questions</a></li>
+          <li><a href="/c-interview-questions/">C Interview Questions</a></li>
+          <li><a href="/php-interview-questions/">Php Interview Questions</a></li>
+          <li><a href="/c-sharp-interview-questions/">C Sharp Interview Questions</a></li>
+          <li><a href="/web-api-interview-questions/">Web Api Interview Questions</a></li>
+          <li><a href="/hibernate-interview-questions/">Hibernate Interview Questions</a></li>
+          <li><a href="/node-js-interview-questions/">Node Js Interview Questions</a></li>
+          <li><a href="/cpp-interview-questions/">Cpp Interview Questions</a></li>
+          <li><a href="/oops-interview-questions/">Oops Interview Questions</a></li>
+          <li><a href="/devops-interview-questions/">Devops Interview Questions</a></li>
+          <li><a href="/machine-learning-interview-questions/">Machine Learning Interview Questions</a></li>
+          <li><a href="/docker-interview-questions/">Docker Interview Questions</a></li>
+          <li><a href="/mysql-interview-questions/">Mysql Interview Questions</a></li>
+          <li><a href="/css-interview-questions/">Css Interview Questions</a></li>
+          <li><a href="/laravel-interview-questions/">Laravel Interview Questions</a></li>
+          <li><a href="/asp-net-interview-questions/">Asp Net Interview Questions</a></li>
+          <li><a href="/django-interview-questions/">Django Interview Questions</a></li>
+          <li><a href="/dot-net-interview-questions/">Dot Net Interview Questions</a></li>
+          <li><a href="/kubernetes-interview-questions/">Kubernetes Interview Questions</a></li>
+          <li><a href="/operating-system-interview-questions/">Operating System Interview Questions</a></li>
+          <li><a href="/react-native-interview-questions/">React Native Interview Questions</a></li>
+          <li><a href="/aws-interview-questions/">Aws Interview Questions</a></li>
+          <li><a href="/git-interview-questions/">Git Interview Questions</a></li>
+          <li><a href="/java-8-interview-questions/">Java 8 Interview Questions</a></li>
+          <li><a href="/mongodb-interview-questions/">Mongodb Interview Questions</a></li>
+          <li><a href="/dbms-interview-questions/">Dbms Interview Questions</a></li>
+          <li><a href="/spring-boot-interview-questions/">Spring Boot Interview Questions</a></li>
+          <li><a href="/power-bi-interview-questions/">Power Bi Interview Questions</a></li>
+          <li><a href="/pl-sql-interview-questions/">Pl Sql Interview Questions</a></li>
+          <li><a href="/tableau-interview-questions/">Tableau Interview Questions</a></li>
+          <li><a href="/linux-interview-questions/">Linux Interview Questions</a></li>
+          <li><a href="/ansible-interview-questions/">Ansible Interview Questions</a></li>
+          <li><a href="/java-interview-questions/">Java Interview Questions</a></li>
+          <li><a href="/jenkins-interview-questions/">Jenkins Interview Questions</a></li>
+          <li><a href="/agile-interview-questions/">Agile Interview Questions</a></li>
+          <li><a href="/networking-interview-questions/">Networking Interview Questions</a></li>
+          <li><a href="/azure-interview-questions/">Azure Interview Questions</a></li>
+          <li><a href="/software-testing-interview-questions/">Software Testing Interview Questions</a></li>
+          <li><a href="/automation-testing-interview-questions/">Automation Testing Interview Questions</a></li>
+          <li><a href="/android-interview-questions/">Android Interview Questions</a></li>
+          <li><a href="/hr-interview-questions/">Hr Interview Questions</a></li>
+          <li><a href="/rest-api-interview-questions/">Rest Api Interview Questions</a></li>
+          <li><a href="/unix-interview-questions/">Unix Interview Questions</a></li>
+          <li><a href="/multithreading-interview-questions/">Multithreading Interview Questions</a></li>
+          <li><a href="/typescript-interview-questions/">Typescript Interview Questions</a></li>
+          <li><a href="/angular-8-interview-questions/">Angular 8 Interview Questions</a></li>
+          <li><a href="/salesforce-interview-questions/">Salesforce Interview Questions</a></li>
+          <li><a href="/spark-interview-questions/">Spark Interview Questions</a></li>
+          <li><a href="/bootstrap-interview-questions/">Bootstrap Interview Questions</a></li>
+          <li><a href="/web-services-interview-questions/">Web Services Interview Questions</a></li>
+          <li><a href="/jsp-interview-questions/">Jsp Interview Questions</a></li>
+          <li><a href="/html-interview-questions/">Html Interview Questions</a></li>
+          <li><a href="/hadoop-interview-questions/">Hadoop Interview Questions</a></li>
+          <li><a href="/angularjs-interview-questions/">Angularjs Interview Questions</a></li>
+          <li><a href="/cucumber-interview-questions/">Cucumber Interview Questions</a></li>
+      </ul>
+    </div>
+    <div class="row text-center" style="margin-top: 10px" id="footer-social">
+        <ul class="list-inline">
+          <li>
+            <a target="_blank" href="https://www.facebook.com/interviewbit">
+              <i class="fa fa-facebook"></i>
+              <span style="padding-left: 8px">Like Us</span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="https://twitter.com/interview_bit">
+              <i class="fa fa-twitter"></i>
+              <span style="padding-left: 8px">Follow Us</span>
+            </a>
+          </li>
+          <li>
+            <a target="_blank" href="mailto:hello@interviewbit.com">
+              <i class="fa fa-envelope-o"></i>
+              <span style="padding-left: 8px">Email</span>
+            </a>
+          </li>
+        </ul>
+    </div>
+    <br/>
+    <br/>
+  </div>
+</section>
+
+  <div class="feedback-container" style="display: none;">
+    <div class="feedback-box">
+  <div class="beta-phase" data-toggle="modal" data-target="#feedbackmodal" style=" border-right: solid #f2efef thin; ">
+    <i>
+			<svg xmlns="http://www.w3.org/2000/svg" width="17" height="18" viewBox="0 0 17 18">
+					<g fill="#000" fill-rule="nonzero" opacity=".54">
+							<path d="M14.944 1.894l.708.707-1.645 1.645-.707-.707zM2.452 1.9l1.626 1.626-.707.707-1.626-1.626zM8.117 0h1v2.326h-1zM.07 7.753h2.299v1H.07zM14.631 7.753h2.299v1h-2.299zM8.5 3.09c-2.801 0-5.08 2.306-5.08 5.14v.153c0 1.253.703 2.58 1.324 3.753.5.943.971 1.834.971 2.462l-.008.519C5.707 16.707 6.97 18 8.522 18s2.815-1.294 2.815-2.883l-.054-.553c-.065-.65.443-1.59.982-2.584.631-1.165 1.284-2.369 1.316-3.572V8.23c0-2.834-2.28-5.14-5.081-5.14zm3.093 8.518c-.294.542-.58 1.07-.784 1.573H6.12a19.59 19.59 0 0 0-.7-1.411c-.607-1.145-1.234-2.329-1.234-3.387V8.23c0-2.407 1.935-4.365 4.314-4.365s4.314 1.958 4.314 4.365v.168c-.026 1.005-.634 2.126-1.221 3.21z"/>
+					</g>
+			</svg>
+    </i>
+    <span class='feedback_grey_text'> Got suggestions ? </span> <span class='feedback_blue_text'>We would love to hear your feedback.</span>
+  </div>
+  <div class="beta-phase hidden-xs">
+    <a style="color: #ffffff;" target="_blank" href="http://www.quora.com/What-is-your-review-of-InterviewBit">
+        <i>
+					<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+							<g fill="#000" fill-rule="nonzero" opacity=".54">
+									<path d="M16.105 0H1.895C.85 0 0 .85 0 1.895v9.473c0 1.045.85 1.895 1.895 1.895h4.894v4.421a.317.317 0 0 0 .542.22l4.526-4.64h4.248c1.045 0 1.895-.85 1.895-1.896V1.895C18 .85 17.15 0 16.105 0zm1.263 11.368c0 .697-.566 1.264-1.263 1.264h-4.381a.315.315 0 0 0-.226.095L7.42 16.908v-3.96a.316.316 0 0 0-.316-.316h-5.21a1.264 1.264 0 0 1-1.263-1.264V1.895c0-.697.566-1.263 1.263-1.263h14.21c.697 0 1.263.566 1.263 1.263v9.473z"/>
+									<path fill-opacity=".87" d="M9.093 4.514l-.25.25-.251-.25c-.713-.713-1.787-.713-2.5 0-.757.757-.757 1.9-.012 2.643L8.606 10a.316.316 0 0 0 .472 0l2.514-2.828c.757-.758.757-1.9 0-2.657-.713-.713-1.787-.713-2.5 0z"/>
+							</g>
+					</svg>
+        </i>
+       <span class="feedback_grey_text"> Loved InterviewBit ? </span><span class="feedback_blue_text">Write us a testimonial.</span>
+    </a>
+  </div>
+</div>
+<!-- Modal -->
+<div class="modal fade" id="feedbackmodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Your feedback is important to help us improve.</h4>
+      </div>
+      <form class="form" id="feedback-form" action="/feedback/" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="&#x2713;" /><input type="hidden" name="authenticity_token" value="/a2HBeguf/F7qof6tcmbqKUqxK4+rWd2cxGRAepsDV37jE42jZZAC2BJBxmT7wYhGT1A8w8oIesPDnFnELFbUQ==" />
+        <input type="hidden" name="referer_url" value=https://www.interviewbit.com/oops-interview-questions/ >
+        <input type="hidden" name="browser" id="browser">
+        <input type="hidden" name="window" id="window">
+        <input type="hidden" name="document" id="document">
+        <input type="hidden" name="screen" id="screen">
+
+        <div class="modal-body">
+          <div class="success-msg alert alert-notice alert-dismissible hidden"></div>
+          <div class="form-group">
+            <label for="content">Feedback</label>
+            <textarea required="" rows="6" class="form-control" id="content" name="content" placeholder="Your question or comment here"></textarea>
+          </div>
+        </div>
+        <div class="modal-footer">
+          <div class="form-group">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Submit Feedback</button>
+          </div>
+        </div>
+</form>    </div>
+  </div>
+</div>
+
+  </div>
+
+  <script src="https://assets.interviewbit.com/assets/web/application-c8950477cfda6532360668cf18b14de3cf2fdc5cba622bf8a7e6dc0eb0bd0f90.js.gz" crossorigin="anonymous"></script>
+    
+  <script src="https://assets.interviewbit.com/packs/js/vendors~frontend/base~9ee2143f.369e48.chunk.js"></script>
+<script src="https://assets.interviewbit.com/packs/js/vendors~frontend/base~dbd3621e.41dbbc.chunk.js"></script>
+<script src="https://assets.interviewbit.com/packs/js/frontend/base~fronten~ac292c5b.fc3238.chunk.js"></script>
+<script src="https://assets.interviewbit.com/packs/js/frontend/base~fronten~2066cf30.d5cb8c.chunk.js"></script>
+<script src="https://assets.interviewbit.com/packs/js/frontend/base.631319.js"></script>
+
+  <script src="https://assets.interviewbit.com/packs/js/frontend/ibpp/common~~12b7cac7.9f77e2.chunk.js"></script>
+<script src="https://assets.interviewbit.com/packs/js/frontend/ibpp/onboarding.4a6a17.js"></script>
+
+
+    <script>
+    window.addEventListener('DOMContentLoaded', function() {
+      (
+        myinterviewtrainer &&
+        myinterviewtrainer.keyword_search &&
+        myinterviewtrainer.keyword_search.init()
+      );
+    });
+  </script>
+<script>
+  window.google_analytics_tracking = function(social_media) {
+    window.trackGaEvent(social_media, 'share', 'https://www.interviewbit.com/oops-interview-questions/');
+  };
+
+  window.copyToClipboard = function(event) {
+    event.preventDefault();
+
+    var copyText = document.getElementById('copy-field');
+    copyText.select();
+    copyText.setSelectionRange(0, 99999);
+
+    document.execCommand('copy');
+    var successMsg = document.querySelector('.social-share__text');
+    successMsg.classList.add('social-share__text--active');
+    setTimeout(() => {
+      successMsg.classList.remove('social-share__text--active');
+    }, 1000);
+  };
+</script>
+<script>
+  $(document).ready(function () {
+    if ($(window).width() <= 767) {
+      return;
+    }
+
+    var sidebar = $('.ibpage__sidebar');
+
+    sidebar.css({ width: sidebar.outerWidth() });
+    var topPos = sidebar.offset().top - 30;
+    var bottomPos = $('#footer').outerHeight() + 50;
+
+    sidebar.affix({
+      offset: {
+        top: topPos,
+        bottom: bottomPos
+      }
+    });
+
+    sidebar.on('affix.bs.affix', function () {
+      sidebar.css({ position: '' });
+    });
+
+    var allLinks = sidebar.find('a');
+
+    allLinks.on('click', function () {
+      allLinks.removeClass('active');
+      $(this).addClass('active');
+    });
+
+    $('a[href="' + window.location.hash + '"]').addClass('active');
+  });
+</script>
+  <script>
+    $(document).ready(function () {
+      var problems = $('.ibpage-problems__item');
+
+      problems.on('click', '.form-check__input', function() {
+        var parent = $(this).parent('.form-check');
+        var correct = parent.data('correct');
+        parent.removeClass('form-check--success form-check--error');
+
+        if (correct) {
+          parent.addClass('form-check--success');
+        } else {
+          parent.addClass('form-check--error');
+        }
+
+        var optionsContainer = parent.parent('.ibpage-problems-options')
+        optionsContainer.find('.form-check-input').attr({ disabled: true });
+        optionsContainer.find('.form-check[data-correct="true"]').addClass('form-check--success');
+      });
+    });
+  </script>
+    <script>
+        $("body").delegate("#feedback-form", "submit", function(){
+            $form = $(this);
+            $('button[type=submit]', $form).attr('disabled', 'disabled');
+            $.loader({
+                className:"blue-with-image-2",
+                content:''
+            });
+            $('#browser').val(get_OS() + "-" + get_browser().name + get_browser().version);
+            $('#window').val($(window).width() + "*" + $(window).height());
+            $('#document').val($(document).width() + "*" + $(document).height());
+            $('#screen').val(screen.width + "*" + screen.height);
+            $.ajax({
+                url: $form.attr("action"),
+                data: $form.serialize(),
+                type: $form.attr("method"),
+                complete: function () {
+                    $.loader('close');
+                    $('button[type=submit]', $form).attr('disabled', false);
+                },
+                success: function(resp){
+                    if(resp.success){
+                        $(".success-msg", $form).hide().removeClass('hidden').html(resp.info).fadeIn('slow');
+                        $("#content", $form).val('');
+                    }else{
+                        alert('something went wrong. Please try again.');
+                    }
+
+                },
+                error: function(){
+                    alert('something went wrong. Please try again.');
+                }
+            });
+            return false;
+        });
+
+
+
+    </script>
+
+
+  <script>
+    // Disable google one tap auto Prompt
+    window.googleOneTapConfig = window.googleOneTapConfig || {};
+    window.googleOneTapConfig.disableAutoPropmt = true;
+    let loggedIn = false;
+
+    function initDownloadFlow() {
+      const downloadButtons = document.querySelectorAll('.download-pdf');
+      const enforceSigninButtons = document.querySelectorAll('.enforce-signin');
+      const modalDownloadTriggers = document.querySelectorAll('[data-action="start-download"]');
+
+      const track = (el) => {
+        const source = el.dataset.source;
+        window.trackGaEvent('interview-article', 'download_pdf_clicked', source);
+      }
+      const forAllDownload = (fn) => downloadButtons.forEach(el => fn(el));
+      const forAllSignin = (fn) => enforceSigninButtons.forEach(el => fn(el));
+      const forAllModalTriggers = (fn) => modalDownloadTriggers.forEach(el => fn(el));
+
+      if (loggedIn) {
+        forAllDownload(el => el.classList.remove('hidden'));
+      } else {
+        forAllSignin(el => el.classList.remove('hidden'));
+      }
+
+      const slug = `oops-interview-questions`;
+      const autoDownloadKey = `has_pending_download_${slug}`;
+
+      const tryDownload = async () => {
+        forAllDownload(el => el.style.pointerEvents = 'none');
+        forAllDownload(el => el.innerHTML = '<span>Downloading...</span>');
+        let attempts = 0;
+        window.trackGaEvent('interview-article', 'pdf_download_start', slug);
+
+        const startDownload = async (link, onError) => {
+          const res = await fetch(link);
+          const { ok, url } = res;
+          if (ok) {
+            download(url);
+            forAllDownload(el => el.style.pointerEvents = 'auto');
+            forAllDownload(el => {
+              el.innerHTML = /* html */`
+                <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+                <span class="text">Download PDF</span>
+              `;
+            });
+            window.trackGaEvent('interview-article', 'pdf_download_complete', slug);
+          } else {
+            attempts += 1;
+            if (attempts < 5) {
+              setTimeout(() => startDownload(link, onError), 2000);
+            } else {
+              onError();
+            }
+          }
+        }
+
+        const onError = () => {
+          forAllDownload(el => el.style.pointerEvents = 'auto');
+          forAllDownload(el => {
+            el.innerHTML = /* html */`
+              <span><img src="https://assets.interviewbit.com/assets/svg/download_icon-cd2d5b54bc600ee83352693330804e7d9324dddf41fc105cd5e3176e92f3cd36.svg.gz"></img></span>
+              <span class="text">Download Failed!</span>
+            `;
+          });
+        };
+
+        try {
+          const res = await fetch(`/generate_pdf?slug=${slug}`);
+          const { link } = await res.json();
+
+          await startDownload(link, onError);
+        } catch (err) {
+          onError();
+        }
+      }
+
+      forAllModalTriggers(el => {
+        el.addEventListener('click', () => {
+          track(el);
+          tryDownload();
+          document.body.click();
+        });
+      });
+
+      forAllSignin(el => {
+        el.addEventListener('click', () => {
+          track(el);
+          localStorage.setItem(autoDownloadKey, true);
+        })
+      });
+
+      forAllDownload(el => {
+        el.addEventListener('click', () => {
+          track(el);
+          tryDownload();
+        });
+      });
+
+
+      const shouldDownload = localStorage.getItem(autoDownloadKey);
+      if (shouldDownload && loggedIn) {
+        const modalTrigger = document.getElementById('auto-download-modal-trigger');
+        modalTrigger.click();
+        localStorage.removeItem(autoDownloadKey);
+      }
+
+      function download(url) {
+        const a = document.createElement('a')
+        a.href = url;
+        a.target = '_blank';
+        a.download = slug;
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
+      }
+    }
+
+    $(window).load(function() {
+      $.ajax({
+        url: '/get_user_options/',
+        success: function(resp) {
+          $('#welcome-page-nav').html(resp.header_html);
+          $('meta[name="csrf-token"]').attr('content', resp.csrf_token);
+          $('[name="authenticity_token"]').each(function (index, el) {
+            $(el).val(resp.csrf_token);
+          });
+          // Show/hide feedback form for logged in users
+          $('.feedback-container')[resp.logged_in ? 'show' : 'hide']();
+          loggedIn = resp.logged_in;
+
+          if (resp.logged_in) {
+            window.__INTERVIEWBIT__ = window.__INTERVIEWBIT__ || {};
+            window.__INTERVIEWBIT__.onboard = resp.onboard;
+
+            window.Interviewbit && window.Interviewbit.onboard();
+          } else {
+            window.Interviewbit && window.Interviewbit.authFlow();
+            window.googleOneTapConfig.showGooglePrompt();
+          }
+          initDownloadFlow();
+
+          const inInterviewGuideBtn = document.getElementById('in-interview-guide-button');
+          if (inInterviewGuideBtn) {
+            window.trackGaEvent('MoCo', 'view', 'in-interview-guide');
+            inInterviewGuideBtn.addEventListener('click', () => (
+              window.trackGaEvent('MoCo', 'redirect', 'in-interview-guide')
+            ));
+          }
+        }
+      });
+    });
+  </script>
+
+  
+    <noscript>
+      <iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NMKZTRG" height="0" width="0" style="display:none;visibility:hidden"></iframe>
+    </noscript>
+
+
+  <script>
+    var gaSendMethod = 'send';
+
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+        ga('create', 'UA-56207880-1', {'siteSpeedSampleRate': 100});
+        ga('require', 'displayfeatures');
+        ga('send', 'pageview');
+
+    // added so that the files that are common on both ib and scaler can handle their respective ga calls
+    window.trackGaEvent = function(...args) {
+        const gaArgs = [gaSendMethod, 'event', ...args];
+        window.ga(...gaArgs);
+        // This is a temporary workaround
+        if (gaArgs[1] !== 'exception' && typeof storeEsEvent !== 'undefined') {
+            let eventTitle = "";
+            for (let i = 2; i < gaArgs.length; i++) {
+                if (i != 2)
+                    eventTitle = eventTitle + "-";
+                eventTitle = eventTitle + gaArgs[i];
+            }
+            storeEsEvent(eventTitle);
+        }
+    }
+</script>
+
+  <div id="g_id_onload"
+  data-client_id="555034069712-3l6fq4ijgqmbufisic1da21ov6gmh83k.apps.googleusercontent.com"
+  data-login_uri="https://www.interviewbit.com/google_one_tap/"
+  data-auto_prompt="false"
+  data-context="use">
+</div>
+<script src="https://accounts.google.com/gsi/client" async defer></script>
+<script>
+  (function (window, undefined) {
+    var logged_in = 'false';
+    var showPrompt = function () {
+      google.accounts.id.prompt();
+    };
+
+    window.googleOneTapConfig = window.googleOneTapConfig || {};
+    window.googleOneTapConfig.showGooglePrompt = showPrompt;
+
+    window.onGoogleLibraryLoad = function () {
+      var disableAutoPropmt = window.googleOneTapConfig.disableAutoPropmt;
+
+      if (logged_in === 'false' && !disableAutoPropmt) {
+        showPrompt();
+      }
+    };
+  })(window);
+</script>
+
+</body>
