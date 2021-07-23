@@ -1,5 +1,5 @@
 package linklist;
-
+import linklist.LinklistTemplate;
 public class ReverseLinklist {
     static Node head;
 

@@ -19,7 +19,7 @@ public class MinArrows {
         return arrow;
     }
     public static void main(String[] args) {
-        int[][] points = {{-2147483646,-2147483645},{2147483646,2147483647}};
+        int[][] points = {{10,16},{2,8},{1,6},{7,12}};
         System.out.println(findMinArrowShots(points));
     }
     

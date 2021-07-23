@@ -42,7 +42,7 @@ public class LinklistCycle {
 
     public static Node checkCycle() {
         Node slow_ptr = head, fast_ptr = head;
-        while(fast_ptr != null && fast_ptr.next != null){
+        while(fast_ptr.next != null && fast_ptr != null){
             slow_ptr = slow_ptr.next;
             fast_ptr = fast_ptr.next.next;
 

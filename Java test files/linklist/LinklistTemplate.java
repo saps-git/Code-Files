@@ -1,7 +1,7 @@
 package linklist;
 import java.util.*;
 
-public class Linklist_template {
+public class LinklistTemplate {
     static Node head;
 
     public static Node insert(int data){

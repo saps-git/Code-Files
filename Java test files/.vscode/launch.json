@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Launch ThreeSum",
+            "request": "launch",
+            "mainClass": "questions.Leetcode.ThreeSum",
+            "projectName": "Java test files_7adf74de"
+        },
+        {
+            "type": "java",
             "name": "Launch ReverseLinklist",
             "request": "launch",
             "mainClass": "linklist.ReverseLinklist",
